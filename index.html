@@ -11,8 +11,10 @@
         <a href="index.html">
           <img src="https://via.placeholder.com/220x47" width="220" height="47" alt="Логотип интернет-магазина «Техномарт»">
         </a>
-        <label for="site-search">Поиск по сайту</label>
-        <input type="search" id="site-search" name="site-search" placeholder="Поиск:">
+        <form method="GET" action="https://echo.htmlacademy.ru/">
+          <label for="site-search">Поиск по сайту</label>
+          <input type="search" id="site-search" name="site-search" placeholder="Поиск:">  
+        </form>
         <a href>Закладки: <span>0</span></a>
         <a href>Корзина: <span>0</span></a>
         <a href>Оформить заказ</a>  
@@ -20,9 +22,7 @@
 
       <div>
         <p>
-          Интернет-магазин<br>
-          строительных материалов<br>
-          и инструментов для ремонта
+          Интернет-магазин строительных материалов и инструментов для ремонта
         </p>
         <address>
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -66,6 +66,33 @@
             <p>Техника</p>
             <a href>Для стройки</a>
           </li>
+        </ul>
+
+        <div>
+          <div>
+            <div>
+              <img src="https://via.placeholder.com/620x226" width="620" height="226" alt="Рабочий с перфоратором">
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <a href="catalog.html">Открыть каталог</a>
+            </div>
+
+            <div>
+              <img src="https://via.placeholder.com/620x226" width="620" height="226" alt="Рабочий с дрелью">
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+              <a href="catalog.html">Открыть каталог</a>
+            </div>
+          </div>
+          <div>
+            <button type="button">Назад</button>
+            <button type="button">Вперед</button>
+            <button type="button">Слайд-1</button>
+            <button type="button">Слайд-2</button>
+          </div>
+        </div>
+
+        <ul>
           <li>
             <p>Скидки 50%</p>
             <a href>На 350 товаров</a>
@@ -73,27 +100,6 @@
           <li>
             <p>Доставка</p>
             <a href>Бесплатно</a>
-          </li>
-          <li>
-            <figure>
-              <figcaption>
-                <p>Перфораторы</p>
-                <p>Настоящие мужские игрушки</p>
-              </figcaption>
-              <img src="https://via.placeholder.com/620x226" width="620" height="226" alt="Рабочий с перфоратором">
-            </figure>
-
-            <figure>
-              <figcaption>
-                <p>Дрели</p>
-                <p>Соседям на радость!</p>
-              </figcaption>
-              <img src="https://via.placeholder.com/620x226" width="620" height="226" alt="Рабочий с дрелью">
-            </figure>
-
-            <button type="button">Назад</button>
-            <button type="button">Вперед</button>
-            <a href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
       </section>
@@ -111,8 +117,8 @@
               <p>32500 Р.</p>
               <p>25500 Р.</p>
             </a>
-            <button type="button">Купить</button>
-            <button type="button">В закладки</button>
+            <a href>Купить</a>
+            <a href>В закладки</a>
           </li>
 
           <li>
@@ -122,8 +128,8 @@
               <p>22500 Р.</p>
               <p>15500 Р.</p>
             </a>
-            <button type="button">Купить</button>
-            <button type="button">В закладки</button>
+            <a href>Купить</a>
+            <a href>В закладки</a>
           </li>
 
           <li>
@@ -133,8 +139,8 @@
               <p>30500 Р.</p>
               <p>25500 Р.</p>
             </a>
-            <button type="button">Купить</button>
-            <button type="button">В закладки</button>
+            <a href>Купить</a>
+            <a href>В закладки</a>
           </li>
 
           <li>
@@ -144,8 +150,8 @@
               <p>22500 Р.</p>
               <p>12500 Р.</p>
             </a>
-            <button type="button">Купить</button>
-            <button type="button">В закладки</button>
+            <a href>Купить</a>
+            <a href>В закладки</a>
           </li>
         </ul>
       </section>
@@ -203,47 +209,44 @@
         <h2>Сервисы</h2>
 
         <p>
-          Хороший интернет-магазин отличается от плохого не только ценами!<br>
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
 
-        <ul>
-          <li>
-            <button type="button">Доставка</button>
-          </li>
-          <li>
-            <button type="button">Гарантия</button>
-          </li>
-          <li>
-            <button type="button">Кредит</button>
-          </li>
-        </ul>
-
-        <ul>
-          <li>
-            <h3>Доставка</h3>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо<br>
-              к вашему подъезду совершенно бесплатно!<br>
-              Ведь мы неплохо заработаем,<br>
-              поднимая его на ваш этаж!
-            </p>
-          </li>
-          <li>
-            <h3>Гарантия</h3>
-            <p>
-              Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
-            </p>
-          </li>
-          <li>
-            <h3>Кредит</h3>
-            <p>
-              Залезть в долговую яму стало проще!<br>
-              Кредитные консультанты придут вам на помощь.
-            </p>
-            <a href>Отправить заявку</a>
-          </li>
-        </ul>
+        <div>
+          <ul>
+            <li>
+              <button type="button">Доставка</button>
+            </li>
+            <li>
+              <button type="button">Гарантия</button>
+            </li>
+            <li>
+              <button type="button">Кредит</button>
+            </li>
+          </ul>
+  
+          <ul>
+            <li>
+              <h3>Доставка</h3>
+              <p>
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+              </p>
+            </li>
+            <li>
+              <h3>Гарантия</h3>
+              <p>
+                Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+              </p>
+            </li>
+            <li>
+              <h3>Кредит</h3>
+              <p>
+                Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+              </p>
+              <a href>Отправить заявку</a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section>
@@ -253,8 +256,7 @@
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
         </p>
         <p>
-          Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-          Техномарт работает со многими транспортными компаниями:
+          Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
         </p>
         <ul>
           <li>Деловые линии</li>
@@ -268,8 +270,7 @@
         <h2>Контакты</h2>
 
         <p>
-          Вы можете забрать товар сами,<br>
-          заехав в наш офис:
+          Вы можете забрать товар сами, заехав в наш офис:
         </p>
         <a href>
           <img src="https://via.placeholder.com/300x158" width="300" height="158" alt="Карта проезда к офису">
@@ -309,8 +310,7 @@
 
       <div>
         <p>
-          © 2010–2019 Компания «Техномарт»<br>
-          Все права защищены
+          © 2010–2019 Компания «Техномарт» Все права защищены
         </p>
   
         <section>
@@ -329,15 +329,19 @@
           </ul>
         </section>
   
-        <p>
-          Обратная связь:<br>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
+        <div>
+          <p>
+            Обратная связь:
+          </p>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>  
+        </div>
   
-        <p>
-          Разработано —<br>
-          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
-        </p>
+        <div>
+          <p>
+            Разработано —
+          </p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>  
+        </div>
       </div>
     </footer>
   </body>
