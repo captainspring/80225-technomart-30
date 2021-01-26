@@ -81,13 +81,19 @@
           <fieldset>
             <legend>Цена:</legend>
       
-            <input type="range" name="price" id="filter-price" min="0" max="35000">
-            <label for="filter-price">Цена</label>
-            <p>
-              <span>0</span>
-              —
-              <span>30000</span>
-            </p>
+            <div>
+              <span>
+                <span></span>
+                <button type="button" aria-label="Выбрать минимальное значение"></button>
+                <button type="button" aria-label="Выбрать максимальное значение"></button>
+              </span>
+            </div>
+
+            <div>
+              <input type="number" id="from-price" value="0">
+              <span>—</span>
+              <input type="number" id="to-price" value="30000">
+            </div>
           </fieldset>
       
           <fieldset>
@@ -139,37 +145,30 @@
       <section>
         <h2>Список товаров</h2>
       
-        <form method="GET" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Сортировка:</legend>
-      
-            <ul>
-              <li>
-                <input type="radio" name="sorting-type" value="by-price" id="sorting-price" checked>
-                <label for="sorting-price">По цене</label>
-              </li>
-              <li>
-                <input type="radio" name="sorting-type" value="by-kind" id="sorting-kind">
-                <label for="sorting-kind">По типу</label>
-              </li>
-              <li>
-                <input type="radio" name="sorting-type" value="by-functionality" id="sorting-functionality">
-                <label for="sorting-functionality">По функционалу</label>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <input type="radio" name="sorting-direction" value="to-top" id="direction-to-top" checked>
-                <label for="direction-to-top">По возрастанию</label>
-              </li>
-              <li>
-                <input type="radio" name="sorting-direction" value="to-bottom" id="direction-to-bottom">
-                <label for="direction-to-bottom">По убыванию</label>
-              </li>
-            </ul>
-          </fieldset>
-        </form>
+        <div>
+          <p>Сортировка:</p>
+          
+          <ul>
+            <li>
+              <a href>По цене</a>
+            </li>
+            <li>
+              <a href>По типу</a>
+            </li>
+            <li>
+              <a href>По функционалу</a>
+            </li>
+          </ul>
+          
+          <ul>
+            <li>
+              <a href>По возрастанию</a>
+            </li>
+            <li>
+              <a href>По убыванию</a>
+            </li>
+          </ul>
+        </div>
 
         <ul>
           <li>
