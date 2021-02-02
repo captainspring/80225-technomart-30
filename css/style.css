@@ -82,6 +82,7 @@
   --color-special-lilac: #dc91d8;
   --color-special-mint: #8ed78f;
   --color-special-gold: #ffc047;
+  --color-special-brown: #917f6d;
 }
 
 /* Global
@@ -90,7 +91,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Tahoma, sans-serif;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 13px;
   line-height: 24px;
@@ -118,7 +119,7 @@ img {
 }
 
 .header-menu {
-  font-family: Cuprum, Tahoma, sans-serif;
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -136,14 +137,18 @@ img {
 
 /* Header -- search */
 .search-form__input {
+  font-family: inherit;
+  color: var(--color-white);
   background-color: var(--color-basic-darker);
 }
 
 .search-form__input:focus {
+  color: var(--color-black);
   background-color: var(--color-white);
 }
 
 .search-form__input::placeholder {
+  font-family: inherit;
   color: var(--color-white);
   opacity: 1;
 }
@@ -173,7 +178,7 @@ img {
 
 /* Header -- info */
 .main-header-info {
-  font-family: Cuprum, Tahoma, sans-serif;
+  font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .header-description {
@@ -225,7 +230,7 @@ img {
 }
 
 .main-nav-menu__item {
-  font-family: Cuprum, Tahoma, sans-serif;
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -258,7 +263,7 @@ img {
 }
 
 .promo-catalog-list__item {
-  font-family: Cuprum, Tahoma, sans-serif;
+  font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .promo-catalog-list__item_bg-yellow {
@@ -299,7 +304,8 @@ img {
 
 /* Promo -- slider */
 .promo-slider__slide {
-  font-family: Cuprum, Tahoma, sans-serif;
+  font-family: "Cuprum", "Tahoma", sans-serif;
+  background-color: var(--color-special-brown);
 }
 
 .promo-slider__title {
@@ -337,7 +343,7 @@ img {
 }
 
 .promo-services-list__item {
-  font-family: Cuprum, Tahoma, sans-serif;
+  font-family: "Cuprum", "Tahoma", sans-serif;
 }
 
 .promo-services-list__item_bg-mint {
@@ -377,7 +383,7 @@ img {
 
 /* Sections -- global */
 .section-title {
-  font-family: Cuprum, Tahoma, sans-serif;
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -425,7 +431,7 @@ img {
 
 .products-list__buy-button,
 .products-list__bookmark-button {
-  font-family: Cuprum, Tahoma, sans-serif;
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -475,7 +481,7 @@ img {
 }
 
 .services-slider-tabs-list__tab {
-  font-family: Cuprum, Tahoma, sans-serif;
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
@@ -495,7 +501,7 @@ img {
 }
 
 .services-slider-info-list__title {
-  font-family: Cuprum, Tahoma, sans-serif;
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
@@ -513,7 +519,7 @@ img {
 --------------------------------------------------------*/
 
 .button {
-  font-family: Cuprum, Tahoma, sans-serif;
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -535,7 +541,7 @@ img {
 
 /* Footer -- menu */
 .footer-menu {
-  font-family: Cuprum, Tahoma, sans-serif;
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -586,7 +592,7 @@ img {
 
 /* Footer -- info */
 .footer-info {
-  font-family: Cuprum, Tahoma, sans-serif;
+  font-family: "Cuprum", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -599,7 +605,10 @@ img {
 }
 
 .footer-socials-list__item {
+  width: 44px;
+  height: 44px;
   background-color: var(--color-basic-darkest);
+  border-radius: 50%;
 }
 
 .footer-socials-list__item:hover,
@@ -607,29 +616,30 @@ img {
   background-color: var(--color-accent);
 }
 
+.footer-socials-list__button {
+  background-repeat: no-repeat;
+}
+
 .footer-socials-list__button_vk {
   background-image: url("../img/icons-social/vk.svg");
-  background-repeat: no-repeat;
 }
 
 .footer-socials-list__button_fb {
   background-image: url("../img/icons-social/fb.svg");
-  background-repeat: no-repeat;
 }
 
 .footer-socials-list__button_insta {
   background-image: url("../img/icons-social/insta.svg");
-  background-repeat: no-repeat;
 }
 
-.footer-info-link {
+.footer-info-link a {
   color: var(--color-accent-rare);
 }
 
-.footer-info-link:hover {
+.footer-info-link a:hover {
   text-decoration: underline;
 }
 
-.footer-info-link:active {
+.footer-info-link a:active {
   color: var(--color-accent);
 }
