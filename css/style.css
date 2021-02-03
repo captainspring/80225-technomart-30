@@ -54,14 +54,17 @@
 
 :root {
   --color-black: #000000;
+  --color-black-rgb: 0, 0, 0;
   --color-neutral: #c5c5c5;
   --color-neutral-rgb: 197, 197, 197;
+  --color-neutral-light: #e5e5e5;
   --color-dark-neutral: #a9a9a9;
   --color-dark-neutral-rgb: 169, 169, 169;
   --color-white: #ffffff;
   --color-white-rgb: 255, 255, 255;
 
   --color-basic-light: #f1f5f7;
+  --color-basic-less-light: #f2f6f8;
   --color-basic-medium: #f7f3ec;
   --color-basic-dark: #32425c;
   --color-basic-darker: #293449;
@@ -83,6 +86,8 @@
   --color-special-mint: #8ed78f;
   --color-special-gold: #ffc047;
   --color-special-brown: #917f6d;
+  --color-special-grey: #d7dcde;
+  --color-special-green: #00ca74;
 }
 
 /* Global
@@ -396,7 +401,24 @@ img {
   background-color: var(--color-basic-medium);
 }
 
+.inner-page .section-title_with-bg {
+  background-color: var(--color-basic-less-light);
+}
+
 .section-title_text-black {
+  color: var(--color-black);
+}
+
+/* Breadcrumbs
+--------------------------------------------------------*/
+
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-list__link {
+  line-height: 18px;
+  text-transform: uppercase;
   color: var(--color-black);
 }
 
@@ -515,6 +537,108 @@ img {
   list-style: none;
 }
 
+/* Catalog info
+--------------------------------------------------------*/
+
+.info {
+  background-color: var(--color-basic-light);
+}
+
+/* Filter
+--------------------------------------------------------*/
+
+/* Filter -- general */
+.filter-title {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--color-black);
+  background-color: var(--color-basic-medium);
+}
+
+.filter-form fieldset {
+  border: 0;
+}
+
+.filter-form__name {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+/* Filter -- slider */
+
+.range-slider {
+  background-color: var(--color-basic-medium);
+}
+
+.range-slider__bar {
+  background-color: var(--color-special-grey);
+}
+
+.range-slider__progress {
+  background-color: var(--color-special-green);
+}
+
+.range-slider__toggler {
+  background-color: var(--color-white);
+}
+
+.range-numbers {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--color-black);
+}
+
+.range-numbers__input {
+  font-family: inherit;
+  font-size: 17px;
+  text-align: center;
+  background-color: var(--color-basic-medium);
+}
+
+/* Filter -- checkboxes, radio */
+.filter-list {
+  list-style: none;
+}
+
+.filer-list__item {
+  font-size: 15px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+
+.filter-list__checkbox:disabled + .filter-list__label,
+.filter-list__radio:disabled + .filter-list__label {
+  opacity: 0.4;
+}
+
+/* Filter -- sorting */
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-list__item a {
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(var(--color-black-rgb), 0.3);
+  border-bottom: 1px dotted var(--color-accent);
+}
+
+.sorting-list__item a:hover {
+  color: rgba(var(--color-black-rgb), 1);
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.sorting-list__item_current a,
+.sorting-list__item_current a:hover {
+  color: var(--color-accent);
+  border: 0;
+}
+
 /* Buttons
 --------------------------------------------------------*/
 
@@ -534,6 +658,38 @@ img {
 
 .button:active {
   background-color: var(--color-accent-darkest);
+}
+
+.inner-page .button {
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-neutral-light);
+  border-radius: 2px;
+}
+
+.inner-page .button:hover {
+  border: 1px solid var(--color-neutral);
+}
+
+.inner-page .button:active {
+  border: 1px solid var(--color-accent);
+}
+
+/* Pagination
+--------------------------------------------------------*/
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list__item_current .button {
+  color: var(--color-white);
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 /* Footer
