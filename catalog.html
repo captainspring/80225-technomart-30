@@ -20,11 +20,11 @@
           <img src="img/technomart-logo.svg" width="106.83" height="16.9" alt="Логотип интернет-магазина «Техномарт»">
         </a>
         <form class="search-form" method="GET" action="https://echo.htmlacademy.ru/">
-          <label class="search-form__label visually-hidden" for="site-search">Поиск по сайту</label>
+          <label class="visually-hidden" for="site-search">Поиск по сайту</label>
           <input class="search-form__input" type="search" id="site-search" name="site-search" placeholder="Поиск:">
         </form>
         <a class="header-menu__bookmarks" href="blank.html">Закладки: <span class="bookmarks-counter">0</span></a>
-        <a class="header-menu__cart" href="blank.html">Корзина: <span class="cart-counter">0</span></a>
+        <a class="header-menu__cart header-menu__cart_filled" href="blank.html">Корзина: <span class="cart-counter">10</span></a>
         <a class="header-menu__order" href="blank.html">Оформить заказ</a>
       </div>
 
@@ -37,8 +37,33 @@
           <p class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </address>
         <div class="header-user-menu">
-          <a class="header-user-menu__login" href="blank.html">Войти</a>
-          <a class="header-user-menu__register" href="blank.html">Регистрация</a>
+          <div class="user-profile">
+            <a class="user-profile__link" href="blank.html">
+              <svg width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="user-profile__icon"
+                  d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39C-.026 14.902 0 18 0 18h20s.025-3.099-2.119-3.834z" />
+              </svg>
+              <span class="user-profile__name">
+                Равшан Джамшутович
+              </span>
+            </a>
+            <a class="user-profile__logout" href="#">
+              <svg class="user-profile__logout-icon" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" />
+                <path
+                  d="M2.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.087 3.027v10.946C.112 15.189.938 17 3.116 17h5.027v-1.99H3.116c-.839 0-.992-.683-1.01-1.058z" />
+              </svg>
+              <span class="visually-hidden">Выйти</span>
+            </a>
+          </div>
+          <ul class="user-links-list">
+            <li class="user-links-list__item">
+              <a class="user-links-list__link" href="blank.html">Мои заказы</a>
+            </li>
+            <li class="user-links-list__item">
+              <a class="user-links-list__link" href="blank.html">Личный кабинет</a>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -60,7 +85,12 @@
 
       <ul class="breadcrumbs-list">
         <li class="breadcrumbs-list__item">
-          <a class="breadcrumbs-list__link" href="index.html">Главная</a>
+          <a class="breadcrumbs-list__link" href="index.html">
+            <img src="img/icons-ui/home.svg" width="14" height="12" alt="Главная">
+            <span class="visually-hidden">
+              Главная
+            </span>
+          </a>
         </li>
         <li class="breadcrumbs-list__item">
           <a class="breadcrumbs-list__link" href="catalog.html">Каталог</a>
@@ -68,7 +98,7 @@
         <li class="breadcrumbs-list__item">
           <a class="breadcrumbs-list__link" href="blank.html">Инструмент</a>
         </li>
-        <li class="breadcrumbs-list__link" class="breadcrumbs-list__item">
+        <li class="breadcrumbs-list__item">
           Перфораторы
         </li>
       </ul>
@@ -99,23 +129,23 @@
             <legend class="filter-form__name">Производители:</legend>
 
             <ul class="filter-list">
-              <li class="filer-list__item">
+              <li class="filter-list__item">
                 <input class="filter-list__checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
                 <label class="filter-list__label" for="filter-bosch">Bosch</label>
               </li>
-              <li class="filer-list__item">
+              <li class="filter-list__item">
                 <input class="filter-list__checkbox" type="checkbox" name="interskol" id="filter-interskol">
                 <label class="filter-list__label" for="filter-interskol">Интерскол</label>
               </li>
-              <li class="filer-list__item">
+              <li class="filter-list__item">
                 <input class="filter-list__checkbox" type="checkbox" name="makita" id="filter-makita" checked>
                 <label class="filter-list__label" for="filter-makita">Makita</label>
               </li>
-              <li class="filer-list__item">
+              <li class="filter-list__item">
                 <input class="filter-list__checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
                 <label class="filter-list__label" for="filter-dewalt">DeWALT</label>
               </li>
-              <li class="filer-list__item">
+              <li class="filter-list__item">
                 <input class="filter-list__checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
                 <label class="filter-list__label" for="filter-hitachi">Hitachi</label>
               </li>
@@ -126,25 +156,25 @@
             <legend class="filter-form__name">Питание:</legend>
 
             <ul class="filter-list">
-              <li class="filer-list__item">
+              <li class="filter-list__item">
                 <input class="filter-list__radio" type="radio" name="power-supply" value="accumulator" id="filter-accumulator" checked>
                 <label class="filter-list__label" for="filter-accumulator">Аккумуляторные</label>
               </li>
-              <li class="filer-list__item">
+              <li class="filter-list__item">
                 <input class="filter-list__radio" type="radio" name="power-supply" value="wire" id="filter-wire">
                 <label class="filter-list__label" for="filter-wire">Сетевые</label>
               </li>
             </ul>
           </fieldset>
 
-          <button class="button" type="submit">Показать</button>
+          <button class="button button_no-fill" type="submit">Показать</button>
         </form>
       </section>
 
       <section class="products">
         <h2 class="section-title visually-hidden">Список товаров</h2>
 
-        <div class="filter filter-sorting">
+        <div class="filter-sorting">
           <p class="filter-title">Сортировка:</p>
 
           <ul class="sorting-list">
@@ -159,12 +189,26 @@
             </li>
           </ul>
 
-          <ul class="sorting-list">
-            <li class="sorting-list__item sorting-list__item_current">
-              <a href="#">По возрастанию</a>
+          <ul class="sorting-direction-list">
+            <li class="sorting-direction-list__item sorting-direction-list__item_current">
+              <a href="#">
+                <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="triangle" d="M5.66241 0L11.1624 10L0.162415 10" />
+                </svg>
+                <span class="visually-hidden">
+                  По возрастанию
+                </span>
+              </a>
             </li>
-            <li class="sorting-list__item">
-              <a href="#">По убыванию</a>
+            <li class="sorting-direction-list__item">
+              <a href="#">
+                <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="triangle" transform="scale(1 -1) translate(0, -10)" d="M5.66241 0L11.1624 10L0.162415 10" />
+                </svg>
+                <span class="visually-hidden">
+                  По убыванию
+                </span>
+              </a>
             </li>
           </ul>
         </div>
@@ -262,16 +306,16 @@
 
         <ul class="pagination-list">
           <li class="pagination-list__item pagination-list__item_current">
-            <a class="button">1</a>
+            <a class="button button_no-fill">1</a>
           </li>
           <li class="pagination-list__item">
-            <a class="button" href="#">2</a>
+            <a class="button button_no-fill" href="#">2</a>
           </li>
           <li class="pagination-list__item">
-            <a class="button" href="#">3</a>
+            <a class="button button_no-fill" href="#">3</a>
           </li>
           <li class="pagination-list__item">
-            <a class="button" href="#">Следующая</a>
+            <a class="button button_no-fill" href="#">Следующая</a>
           </li>
         </ul>
       </section>
