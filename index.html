@@ -24,9 +24,9 @@
             <label class="visually-hidden" for="site-search">Поиск по сайту</label>
             <input class="search-form__input" type="search" id="site-search" name="site-search" placeholder="Поиск:">
           </form>
-          <a class="header-menu__bookmarks" href="blank.html">Закладки: <span class="bookmarks-counter">0</span></a>
-          <a class="header-menu__cart" href="blank.html">Корзина: <span class="cart-counter">0</span></a>
-          <a class="header-menu__order" href="blank.html">Оформить заказ</a>
+          <a class="header-menu__link header-menu__link_bookmarks" href="blank.html">Закладки: <span class="bookmarks-counter">0</span></a>
+          <a class="header-menu__link header-menu__link_cart" href="blank.html">Корзина: <span class="cart-counter">0</span></a>
+          <a class="header-menu__link header-menu__link_order" href="blank.html">Оформить заказ</a>
         </div>
       </div>
 
@@ -126,9 +126,10 @@
       </section>
 
       <section class="popular-products wrapper">
-        <h2 class="section-title section-title_with-bg">Популярные товары:</h2>
-
-        <a class="button" href="blank.html">Все популярные товары</a>
+        <div class="section-title-wrapper">
+          <h2 class="section-title">Популярные товары:</h2>
+          <a class="button" href="blank.html">Все популярные товары</a>
+        </div>
 
         <ul class="products-list">
           <li class="products-list__item">
@@ -141,8 +142,10 @@
               <p class="products-list__price products-list__price_old">32500 Р.</p>
               <p class="products-list__price">25500 Р.</p>
             </a>
-            <a class="products-list__buy-button" href="#">Купить</a>
-            <a class="products-list__bookmark-button" href="#">В закладки</a>
+            <div class="products-list__buttons">
+              <a class="products-list__buy-button" href="#">Купить</a>
+              <a class="products-list__bookmark-button" href="#">В закладки</a>
+            </div>
           </li>
 
           <li class="products-list__item products-list__item_new">
@@ -154,8 +157,10 @@
               <p class="products-list__price products-list__price_old">22500 Р.</p>
               <p class="products-list__price">15500 Р.</p>
             </a>
-            <a class="products-list__buy-button" href="#">Купить</a>
-            <a class="products-list__bookmark-button" href="#">В закладки</a>
+            <div class="products-list__buttons">
+              <a class="products-list__buy-button" href="#">Купить</a>
+              <a class="products-list__bookmark-button" href="#">В закладки</a>
+            </div>
           </li>
 
           <li class="products-list__item">
@@ -167,8 +172,10 @@
               <p class="products-list__price products-list__price_old">30500 Р.</p>
               <p class="products-list__price">25500 Р.</p>
             </a>
-            <a class="products-list__buy-button" href="#">Купить</a>
-            <a class="products-list__bookmark-button" href="#">В закладки</a>
+            <div class="products-list__buttons">
+              <a class="products-list__buy-button" href="#">Купить</a>
+              <a class="products-list__bookmark-button" href="#">В закладки</a>
+            </div>
           </li>
 
           <li class="products-list__item products-list__item_new">
@@ -181,16 +188,19 @@
               <p class="products-list__price products-list__price_old">22500 Р.</p>
               <p class="products-list__price">12500 Р.</p>
             </a>
-            <a class="products-list__buy-button" href="#">Купить</a>
-            <a class="products-list__bookmark-button" href="#">В закладки</a>
+            <div class="products-list__buttons">
+              <a class="products-list__buy-button" href="#">Купить</a>
+              <a class="products-list__bookmark-button" href="#">В закладки</a>
+            </div>
           </li>
         </ul>
       </section>
 
       <section class="popular-manufacturers wrapper">
-        <h2 class="section-title section-title_with-bg">Популярные производители:</h2>
-
-        <a class="button" href="blank.html">Все производители</a>
+        <div class="section-title-wrapper">
+          <h2 class="section-title">Популярные производители:</h2>
+          <a class="button" href="blank.html">Все производители</a>
+        </div>
 
         <ul class="popular-manufacturers-list">
           <li class="popular-manufacturers-list__item">
@@ -284,7 +294,7 @@
         </div>
       </section>
 
-      <div class="wrapper">
+      <div class="wrapper company-info-wrapper">
         <section class="company-info">
           <h2 class="section-title section-title_text-black">Компания «Техномарт»</h2>
 
@@ -391,19 +401,20 @@
               </li>
             </ul>
           </section>
+          <div class="footer-info-links">
+            <div class="footer-info-links__item">
+              <p>
+                Обратная связь:
+              </p>
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </div>
 
-          <div class="footer-info-link">
-            <p>
-              Обратная связь:
-            </p>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </div>
-
-          <div class="footer-info-link">
-            <p>
-              Разработано —
-            </p>
-            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
+            <div class="footer-info-links__item">
+              <p>
+                Разработано —
+              </p>
+              <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
+            </div>
           </div>
         </div>
       </div>
