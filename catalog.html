@@ -84,10 +84,6 @@
 
     <main class="main-container">
       <div class="wrapper main-top-wrapper">
-        <div class="section-title-wrapper">
-          <h1 class="section-title">Перфораторы</h1>
-        </div>
-
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-list__item">
             <a class="breadcrumbs-list__link" href="index.html">
@@ -106,8 +102,12 @@
           <li class="breadcrumbs-list__item">
             Перфораторы
           </li>
+        </ul>
+
+        <div class="section-title-wrapper">
+          <h1 class="section-title">Перфораторы</h1>
+        </div>
       </div>
-      </ul>
 
       <div class="wrapper main-content-wrapper">
         <section class="filter">
@@ -137,23 +137,23 @@
 
               <ul class="filter-list">
                 <li class="filter-list__item">
-                  <input class="filter-list__checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+                  <input class="visually-hidden" type="checkbox" name="bosch" id="filter-bosch" checked>
                   <label class="filter-list__label" for="filter-bosch">Bosch</label>
                 </li>
                 <li class="filter-list__item">
-                  <input class="filter-list__checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                  <input class="visually-hidden" type="checkbox" name="interskol" id="filter-interskol">
                   <label class="filter-list__label" for="filter-interskol">Интерскол</label>
                 </li>
                 <li class="filter-list__item">
-                  <input class="filter-list__checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                  <input class="visually-hidden" type="checkbox" name="makita" id="filter-makita" checked>
                   <label class="filter-list__label" for="filter-makita">Makita</label>
                 </li>
                 <li class="filter-list__item">
-                  <input class="filter-list__checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                  <input class="visually-hidden" type="checkbox" name="dewalt" id="filter-dewalt">
                   <label class="filter-list__label" for="filter-dewalt">DeWALT</label>
                 </li>
                 <li class="filter-list__item">
-                  <input class="filter-list__checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                  <input class="visually-hidden" type="checkbox" name="hitachi" id="filter-hitachi">
                   <label class="filter-list__label" for="filter-hitachi">Hitachi</label>
                 </li>
               </ul>
@@ -164,11 +164,11 @@
 
               <ul class="filter-list">
                 <li class="filter-list__item">
-                  <input class="filter-list__radio" type="radio" name="power-supply" value="accumulator" id="filter-accumulator" checked>
+                  <input class="visually-hidden" type="radio" name="power-supply" value="accumulator" id="filter-accumulator" checked>
                   <label class="filter-list__label" for="filter-accumulator">Аккумуляторные</label>
                 </li>
                 <li class="filter-list__item">
-                  <input class="filter-list__radio" type="radio" name="power-supply" value="wire" id="filter-wire">
+                  <input class="visually-hidden" type="radio" name="power-supply" value="wire" id="filter-wire">
                   <label class="filter-list__label" for="filter-wire">Сетевые</label>
                 </li>
               </ul>
@@ -197,8 +197,8 @@
             </ul>
 
             <ul class="sorting-direction-list">
-              <li class="sorting-direction-list__item sorting-direction-list__item_current">
-                <a href="#">
+              <li class="sorting-direction-list__item">
+                <a class="sorting-direction-list__link sorting-direction-list__link_current" href="#">
                   <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="triangle" d="M5.66241 0L11.1624 10L0.162415 10" />
                   </svg>
@@ -208,7 +208,7 @@
                 </a>
               </li>
               <li class="sorting-direction-list__item">
-                <a href="#">
+                <a class="sorting-direction-list__link" href="#">
                   <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path class="triangle" transform="scale(1 -1) translate(0, -10)" d="M5.66241 0L11.1624 10L0.162415 10" />
                   </svg>

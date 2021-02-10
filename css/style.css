@@ -88,7 +88,6 @@
   --color-special-blue: #3bbce3;
   --color-special-lilac: #dc91d8;
   --color-special-mint: #8ed78f;
-  --color-special-gold: #ffc047;
   --color-special-brown: #917f6d;
   --color-special-grey: #d7dcde;
   --color-special-grey-light: #eaeaea;
@@ -575,8 +574,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  /* width: 620px;
-  min-height: 266px; */
+  height: 100%;
 }
 
 .promo-slider__arrow {
@@ -603,7 +601,7 @@ img {
 
 .promo-slider__bullets {
   position: absolute;
-  top: 220px;
+  bottom: 36px;
   box-sizing: border-box;
   width: 620px;
   padding: 0 25px;
@@ -650,7 +648,7 @@ img {
 }
 
 .promo-services-list__item_bg-gold {
-  background-color: var(--color-special-gold);
+  background-color: var(--color-special-yellow);
 }
 
 .promo-services-list__name {
@@ -704,6 +702,10 @@ img {
   background-color: var(--color-basic-medium);
 }
 
+.main-top-wrapper {
+  margin-bottom: 20px;
+}
+
 .inner-page .section-title-wrapper {
   grid-template-columns: 1fr;
   margin-bottom: 0;
@@ -719,15 +721,7 @@ img {
 /* Breadcrumbs
 --------------------------------------------------------*/
 
-.main-top-wrapper {
-  display: grid;
-  padding-bottom: 20px;
-  grid-template-areas: "breadcrumbs"
-  "page-title";
-}
-
 .breadcrumbs-list {
-  grid-area: breadcrumbs;
   min-height: 59px;
   margin: 0;
   padding: 21px 0 20px;
@@ -1282,11 +1276,6 @@ img {
   opacity: 0.4;
 }
 
-.filter-list__checkbox,
-.filter-list__radio {
-  display: none;
-}
-
 .filter-list__label {
   padding-left: 35px;
 }
@@ -1322,16 +1311,22 @@ img {
   border: 0;
 }
 
-.triangle {
+.sorting-direction-list__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.sorting-direction-list__link .triangle {
   fill: var(--color-special-grey-darker);
 }
 
-.triangle:hover {
+.sorting-direction-list__link:hover .triangle {
   fill: var(--color-black);
 }
 
-.sorting-direction-list__item_current .triangle,
-.sorting-direction-list__item_current .triangle:hover {
+.sorting-direction-list__link_current .triangle,
+.sorting-direction-list__link_current:hover .triangle {
   fill: var(--color-accent);
 }
 
