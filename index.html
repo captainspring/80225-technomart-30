@@ -40,8 +40,10 @@
           <p class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </address>
         <div class="header-user-menu">
-          <a class="header-user-menu__login" href="blank.html">Войти</a>
-          <a class="header-user-menu__register" href="blank.html">Регистрация</a>
+          <div class="guest-links">
+            <a class="header-user-menu__login" href="blank.html">Войти</a>
+            <a class="header-user-menu__register" href="blank.html">Регистрация</a>
+          </div>
         </div>
       </div>
 
@@ -122,7 +124,7 @@
             <p class="promo-services-list__name">Скидки 50%</p>
             <a class="promo-services-list__link" href="blank.html">На 350 товаров</a>
           </li>
-          <li class="promo-services-list__item promo-services-list__item_bg-gold">
+          <li class="promo-services-list__item promo-services-list__item_bg-yellow">
             <p class="promo-services-list__name">Доставка</p>
             <a class="promo-services-list__link" href="blank.html">Бесплатно</a>
           </li>
@@ -143,8 +145,10 @@
                   alt="Перфоратор BOSCH BFG 9000">
               </div>
               <h3 class="products-list__name">Перфоратор BOSCH BFG 9000</h3>
-              <p class="products-list__price products-list__price_old">32500 Р.</p>
-              <p class="products-list__price">25500 Р.</p>
+              <div class="products-list__price-list">
+                <p class="products-list__price products-list__price_old">32500 Р.</p>
+                <p class="products-list__price">25500 Р.</p>
+              </div>
             </a>
             <div class="products-list__buttons">
               <a class="products-list__buy-button" href="#">Купить</a>
@@ -155,11 +159,14 @@
           <li class="products-list__item products-list__item_new">
             <a class="products-list__card" href="blank.html">
               <div class="products-list__image-container">
-                <img class="products-list__image" src="img/products/perforator_bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+                <img class="products-list__image" src="img/products/perforator_bosch-bfg-3000.jpg" width="127" height="112"
+                  alt="Перфоратор BOSCH BFG 3000">
               </div>
               <h3 class="products-list__name">Перфоратор BOSCH BFG 3000</h3>
-              <p class="products-list__price products-list__price_old">22500 Р.</p>
-              <p class="products-list__price">15500 Р.</p>
+              <div class="products-list__price-list">
+                <p class="products-list__price products-list__price_old">22500 Р.</p>
+                <p class="products-list__price">15500 Р.</p>
+              </div>
             </a>
             <div class="products-list__buttons">
               <a class="products-list__buy-button" href="#">Купить</a>
@@ -170,11 +177,14 @@
           <li class="products-list__item">
             <a class="products-list__card" href="blank.html">
               <div class="products-list__image-container">
-                <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="144" height="128"
+                  alt="Перфоратор BOSCH BFG 6000">
               </div>
               <h3 class="products-list__name">Перфоратор BOSCH BFG 6000</h3>
-              <p class="products-list__price products-list__price_old">30500 Р.</p>
-              <p class="products-list__price">25500 Р.</p>
+              <div class="products-list__price-list">
+                <p class="products-list__price products-list__price_old">30500 Р.</p>
+                <p class="products-list__price">25500 Р.</p>
+              </div>
             </a>
             <div class="products-list__buttons">
               <a class="products-list__buy-button" href="#">Купить</a>
@@ -189,8 +199,10 @@
                   alt="Перфоратор BOSCH BFG 2000">
               </div>
               <h3 class="products-list__name">Перфоратор BOSCH BFG 2000</h3>
-              <p class="products-list__price products-list__price_old">22500 Р.</p>
-              <p class="products-list__price">12500 Р.</p>
+              <div class="products-list__price-list">
+                <p class="products-list__price products-list__price_old">22500 Р.</p>
+                <p class="products-list__price">12500 Р.</p>
+              </div>
             </a>
             <div class="products-list__buttons">
               <a class="products-list__buy-button" href="#">Купить</a>
@@ -329,6 +341,44 @@
           </a>
           <a class="button" href="#">Заблудились? Напишите нам!</a>
         </section>
+
+        <div class="modal modal_feedback">
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <p class="visually-hidden">Введите, пожалуйста, свои данные и сообщение</p>
+          <form class="feedback-form" method="POST" action="https://echo.htmlacademy.ru/">
+            <div class="wrapper">
+              <p class="feedback-form__item">
+                <label class="feedback-form__label" for="feedback-name">Ваше имя:</label>
+                <input class="feedback-form__input" type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
+              </p>
+
+              <p class="feedback-form__item">
+                <label class="feedback-form__label" for="feedback-email">Ваше имя:</label>
+                <input class="feedback-form__input" type="email" id="feedback-email" name="email"
+                  placeholder="email@example.com">
+              </p>
+
+              <p class="feedback-form__item feedback-form__item_textarea">
+                <label class="feedback-form__label" for="feedback-feedback">Текст письма:</label>
+                <textarea class="feedback-form__textarea" id="feedback-feedback" name="feedback" placeholder="В свободной форме"></textarea>
+              </p>
+            </div>
+
+            <div class="modal_gray-bg">
+              <button class="button" type="submit">Отправить</button>
+            </div>
+          </form>
+          <button class="modal__close" type="button" aria-label="Закрыть"></button>
+        </div>
+
+        <div class="modal modal_map">
+          <h2 class="visually-hidden">Карта</h2>
+          <div class="modal__map" style="position:relative;overflow:hidden;">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCUMbMxH~A" width="943" height="449" frameborder="0"
+              allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+          <button class="modal__close" type="button" aria-label="Закрыть"></button>
+        </div>
       </div>
     </main>
 
