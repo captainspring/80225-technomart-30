@@ -40,7 +40,7 @@
           <p class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </address>
         <div class="header-user-menu">
-          <div class="guest-links">
+          <div class="authorization-links">
             <a class="header-user-menu__login" href="blank.html">Войти</a>
             <a class="header-user-menu__register" href="blank.html">Регистрация</a>
           </div>
@@ -341,77 +341,43 @@
           </a>
           <a class="button" href="#">Заблудились? Напишите нам!</a>
         </section>
-
-        <div class="modal modal_feedback">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
-          <p class="visually-hidden">Введите, пожалуйста, свои данные и сообщение</p>
-          <form class="feedback-form" method="POST" action="https://echo.htmlacademy.ru/">
-            <div class="wrapper">
-              <p class="feedback-form__item">
-                <label class="feedback-form__label" for="feedback-name">Ваше имя:</label>
-                <input class="feedback-form__input" type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
-              </p>
-
-              <p class="feedback-form__item">
-                <label class="feedback-form__label" for="feedback-email">Ваше имя:</label>
-                <input class="feedback-form__input" type="email" id="feedback-email" name="email"
-                  placeholder="email@example.com">
-              </p>
-
-              <p class="feedback-form__item feedback-form__item_textarea">
-                <label class="feedback-form__label" for="feedback-feedback">Текст письма:</label>
-                <textarea class="feedback-form__textarea" id="feedback-feedback" name="feedback" placeholder="В свободной форме"></textarea>
-              </p>
-            </div>
-
-            <div class="modal_gray-bg">
-              <button class="button" type="submit">Отправить</button>
-            </div>
-          </form>
-          <button class="modal__close" type="button" aria-label="Закрыть"></button>
-        </div>
-
-        <div class="modal modal_map">
-          <h2 class="visually-hidden">Карта</h2>
-          <div class="modal__map" style="position:relative;overflow:hidden;">
-            <iframe src="https://yandex.ru/map-widget/v1/-/CCUMbMxH~A" width="943" height="449" frameborder="0"
-              allowfullscreen="true" style="position:relative;"></iframe>
-          </div>
-          <button class="modal__close" type="button" aria-label="Закрыть"></button>
-        </div>
       </div>
     </main>
 
     <footer class="main-footer">
       <div class="footer-menu">
         <div class="wrapper">
-          <a class="footer-logo" href="index.html">
-            <img src="img/technomart-logo.svg" width="137" height="22" alt="Логотип интернет-магазина «Техномарт»">
-          </a>
+          <div class="wrapper-company-info">
+            <a class="footer-logo" href="index.html">
+              <img src="img/technomart-logo.svg" width="137" height="22" alt="Логотип интернет-магазина «Техномарт»">
+            </a>
 
-          <ul class="footer-nav-menu">
-            <li class="footer-nav-menu__item"><a href="blank.html">Компания</a></li>
-            <li class="footer-nav-menu__item"><a href="blank.html">Новости</a></li>
-            <li class="footer-nav-menu__item"><a href="catalog.html">Каталог</a></li>
-            <li class="footer-nav-menu__item"><a href="blank.html">Доставка</a></li>
-            <li class="footer-nav-menu__item"><a href="blank.html">Контакты</a></li>
-          </ul>
+            <section class="footer-contacts">
+              <h2 class="footer-contacts__title visually-hidden">Как нас найти</h2>
 
-          <section class="footer-contacts">
-            <h2 class="footer-contacts__title visually-hidden">Как нас найти</h2>
+              <address class="footer-contacts__container">
+                <p class="footer-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <a class="footer-contacts__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+              </address>
+            </section>
+          </div>
 
-            <address class="footer-contacts__container">
-              <p class="footer-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-              <a class="footer-contacts__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-            </address>
-          </section>
+          <div class="wrapper-menus">
+            <ul class="footer-nav-menu">
+              <li class="footer-nav-menu__item"><a href="blank.html">Компания</a></li>
+              <li class="footer-nav-menu__item"><a href="blank.html">Новости</a></li>
+              <li class="footer-nav-menu__item"><a href="catalog.html">Каталог</a></li>
+              <li class="footer-nav-menu__item"><a href="blank.html">Доставка</a></li>
+              <li class="footer-nav-menu__item"><a href="blank.html">Контакты</a></li>
+            </ul>
 
-          <ul class="footer-catalog-menu">
-            <li class="footer-catalog-menu__item"><a href="blank.html">Материалы</a></li>
-            <li class="footer-catalog-menu__item"><a href="blank.html">Техника</a></li>
-            <li class="footer-catalog-menu__item"><a href="blank.html">Инструмент</a></li>
-            <li class="footer-catalog-menu__item"><a href="blank.html">Спецпредложения</a></li>
-          </ul>
+            <ul class="footer-catalog-menu">
+              <li class="footer-catalog-menu__item"><a href="blank.html">Материалы</a></li>
+              <li class="footer-catalog-menu__item"><a href="blank.html">Техника</a></li>
+              <li class="footer-catalog-menu__item"><a href="blank.html">Инструмент</a></li>
+              <li class="footer-catalog-menu__item"><a href="blank.html">Спецпредложения</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -473,5 +439,44 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal modal_feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <p class="visually-hidden">Введите, пожалуйста, свои данные и сообщение</p>
+      <form class="feedback-form" method="POST" action="https://echo.htmlacademy.ru/">
+        <div class="wrapper">
+          <p class="feedback-form__item">
+            <label class="feedback-form__label" for="feedback-name">Ваше имя:</label>
+            <input class="feedback-form__input" type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
+          </p>
+
+          <p class="feedback-form__item">
+            <label class="feedback-form__label" for="feedback-email">Ваше имя:</label>
+            <input class="feedback-form__input" type="email" id="feedback-email" name="email"
+              placeholder="email@example.com">
+          </p>
+
+          <p class="feedback-form__item feedback-form__item_textarea">
+            <label class="feedback-form__label" for="feedback-feedback">Текст письма:</label>
+            <textarea class="feedback-form__textarea" id="feedback-feedback" name="feedback"
+              placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
+
+        <div class="modal_gray-bg">
+          <button class="button" type="submit">Отправить</button>
+        </div>
+      </form>
+      <button class="modal__close" type="button" aria-label="Закрыть"></button>
+    </div>
+
+    <div class="modal modal_map">
+      <h2 class="visually-hidden">Карта</h2>
+      <div class="modal__map" style="position:relative;overflow:hidden;">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCUMbMxH~A" width="943" height="449" frameborder="0"
+          allowfullscreen="true" style="position:relative;"></iframe>
+      </div>
+      <button class="modal__close" type="button" aria-label="Закрыть"></button>
+    </div>
   </body>
 </html>
