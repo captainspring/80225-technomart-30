@@ -21,8 +21,14 @@
             <img src="img/technomart-logo.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
           </a>
           <form class="search-form" method="GET" action="https://echo.htmlacademy.ru/">
-            <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-            <input class="search-form__input" type="search" id="site-search" name="site-search" placeholder="Поиск:">
+            <label class="search-form__label" for="site-search">
+              <span class="visually-hidden">Поиск по сайту</span>
+              <input class="search-form__input" type="search" id="site-search" name="site-search" placeholder="Поиск:">
+              <svg class="search-form__icon" width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" />
+              </svg>
+            </label>
           </form>
           <a class="header-menu__link header-menu__link_bookmarks" href="blank.html">Закладки: <span class="bookmarks-counter">0</span></a>
           <a class="header-menu__link header-menu__link_cart" href="blank.html">Корзина: <span class="cart-counter">0</span></a>
@@ -41,7 +47,14 @@
         </address>
         <div class="header-user-menu">
           <div class="authorization-links">
-            <a class="header-user-menu__login" href="blank.html">Войти</a>
+            <a class="header-user-menu__login" href="blank.html">
+              <svg class="header-user-menu__login-icon" width="21" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.875 8.5L6 0v6H0v5h6v6l8.875-8.5z" />
+                <path
+                  d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
+              </svg>
+              Войти
+            </a>
             <a class="header-user-menu__register" href="blank.html">Регистрация</a>
           </div>
         </div>
@@ -141,7 +154,7 @@
           <li class="products-list__item">
             <a class="products-list__card" href="blank.html">
               <div class="products-list__image-container">
-                <img class="products-list__image" src="img/products/perforator_bosch-bfg-9000.jpg" width="184" height="164"
+                <img class="products-list__image" src="img/products/perforator_bosch-bfg-9000.jpg" width="220" height="170"
                   alt="Перфоратор BOSCH BFG 9000">
               </div>
               <h3 class="products-list__name">Перфоратор BOSCH BFG 9000</h3>
@@ -159,7 +172,7 @@
           <li class="products-list__item products-list__item_new">
             <a class="products-list__card" href="blank.html">
               <div class="products-list__image-container">
-                <img class="products-list__image" src="img/products/perforator_bosch-bfg-3000.jpg" width="127" height="112"
+                <img class="products-list__image" src="img/products/perforator_bosch-bfg-3000.jpg" width="220" height="170"
                   alt="Перфоратор BOSCH BFG 3000">
               </div>
               <h3 class="products-list__name">Перфоратор BOSCH BFG 3000</h3>
@@ -177,7 +190,7 @@
           <li class="products-list__item">
             <a class="products-list__card" href="blank.html">
               <div class="products-list__image-container">
-                <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="144" height="128"
+                <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="220" height="170"
                   alt="Перфоратор BOSCH BFG 6000">
               </div>
               <h3 class="products-list__name">Перфоратор BOSCH BFG 6000</h3>
@@ -195,7 +208,7 @@
           <li class="products-list__item products-list__item_new">
             <a class="products-list__card" href="blank.html">
               <div class="products-list__image-container">
-                <img class="products-list__image" src="img/products/perforator_bosch-bfg-2000.jpg" width="127" height="112"
+                <img class="products-list__image" src="img/products/perforator_bosch-bfg-2000.jpg" width="220" height="170"
                   alt="Перфоратор BOSCH BFG 2000">
               </div>
               <h3 class="products-list__name">Перфоратор BOSCH BFG 2000</h3>
@@ -221,42 +234,42 @@
         <ul class="popular-manufacturers-list">
           <li class="popular-manufacturers-list__item">
             <a class="popular-manufacturers-list__link" href="blank.html">
-              <img class="popular-manufacturers-list__logo" src="img/partner-logos/bosch.png" width="126" height="37" alt="Логотип Bosch">
+              <img class="popular-manufacturers-list__logo" src="img/partner-logos/bosch.png" width="220" height="145" alt="Логотип Bosch">
             </a>
           </li>
           <li class="popular-manufacturers-list__item">
             <a class="popular-manufacturers-list__link" href="blank.html">
-              <img class="popular-manufacturers-list__logo" src="img/partner-logos/makita.png" width="123" height="40" alt="Логотип Makita">
+              <img class="popular-manufacturers-list__logo" src="img/partner-logos/makita.png" width="220" height="145" alt="Логотип Makita">
             </a>
           </li>
           <li class="popular-manufacturers-list__item">
             <a class="popular-manufacturers-list__link" href="blank.html">
-              <img class="popular-manufacturers-list__logo" src="img/partner-logos/dewalt.png" width="146" height="44" alt="Логотип DeWALT">
+              <img class="popular-manufacturers-list__logo" src="img/partner-logos/dewalt.png" width="220" height="145" alt="Логотип DeWALT">
             </a>
           </li>
           <li class="popular-manufacturers-list__item">
             <a class="popular-manufacturers-list__link" href="blank.html">
-              <img class="popular-manufacturers-list__logo" src="img/partner-logos/interskol.png" width="200" height="76" alt="Логотип Интерскол">
+              <img class="popular-manufacturers-list__logo" src="img/partner-logos/interskol.png" width="220" height="145" alt="Логотип Интерскол">
             </a>
           </li>
           <li class="popular-manufacturers-list__item">
             <a class="popular-manufacturers-list__link" href="blank.html">
-              <img class="popular-manufacturers-list__logo" src="img/partner-logos/hitachi.png" width="169" height="31" alt="Логотип Hitachi">
+              <img class="popular-manufacturers-list__logo" src="img/partner-logos/hitachi.png" width="220" height="145" alt="Логотип Hitachi">
             </a>
           </li>
           <li class="popular-manufacturers-list__item">
             <a class="popular-manufacturers-list__link" href="blank.html">
-              <img class="popular-manufacturers-list__logo" src="img/partner-logos/lg.png" width="121" height="73" alt="Логотип LG">
+              <img class="popular-manufacturers-list__logo" src="img/partner-logos/lg.png" width="220" height="145" alt="Логотип LG">
             </a>
           </li>
           <li class="popular-manufacturers-list__item">
             <a class="popular-manufacturers-list__link" href="blank.html">
-              <img class="popular-manufacturers-list__logo" src="img/partner-logos/aeg.png" width="151" height="98" alt="Логотип AEG Power Solutions">
+              <img class="popular-manufacturers-list__logo" src="img/partner-logos/aeg.png" width="220" height="145" alt="Логотип AEG Power Solutions">
             </a>
           </li>
           <li class="popular-manufacturers-list__item">
             <a class="popular-manufacturers-list__link" href="blank.html">
-              <img class="popular-manufacturers-list__logo" src="img/partner-logos/metabo.png" width="206" height="73" alt="Логотип Metabo">
+              <img class="popular-manufacturers-list__logo" src="img/partner-logos/metabo.png" width="220" height="145" alt="Логотип Metabo">
             </a>
           </li>
         </ul>
@@ -286,19 +299,19 @@
             </ul>
 
             <ul class="services-slider-info-list">
-              <li class="services-slider-info-list__item services-slider-info-list__item_current">
+              <li class="services-slider-info-list__item services-slider-info-list__item_delivery services-slider-info-list__item_current">
                 <h3 class="services-slider-info-list__title">Доставка</h3>
                 <p class="services-slider-info-list__description">
                   Мы с удовольствием доставим ваш товар прямо<br>к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!
                 </p>
               </li>
-              <li class="services-slider-info-list__item">
+              <li class="services-slider-info-list__item services-slider-info-list__item_guarantee">
                 <h3 class="services-slider-info-list__title">Гарантия</h3>
                 <p class="services-slider-info-list__description">
                   Если купленный у нас товар поломается или заискрит,<br>а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.
                 </p>
               </li>
-              <li class="services-slider-info-list__item">
+              <li class="services-slider-info-list__item services-slider-info-list__item_credit">
                 <h3 class="services-slider-info-list__title">Кредит</h3>
                 <p class="services-slider-info-list__description">
                   Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.
@@ -463,7 +476,7 @@
           </p>
         </div>
 
-        <div class="modal_gray-bg">
+        <div class="modal__gray-bg">
           <button class="button" type="submit">Отправить</button>
         </div>
       </form>
@@ -474,7 +487,7 @@
       <h2 class="visually-hidden">Карта</h2>
       <div class="modal__map" style="position:relative;overflow:hidden;">
         <iframe src="https://yandex.ru/map-widget/v1/-/CCUMbMxH~A" width="943" height="449" frameborder="0"
-          allowfullscreen="true" style="position:relative;"></iframe>
+          allowfullscreen="true"></iframe>
       </div>
       <button class="modal__close" type="button" aria-label="Закрыть"></button>
     </div>
