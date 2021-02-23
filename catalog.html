@@ -21,8 +21,14 @@
             <img src="img/technomart-logo.svg" width="107" height="17" alt="Логотип интернет-магазина «Техномарт»">
           </a>
           <form class="search-form" method="GET" action="https://echo.htmlacademy.ru/">
-            <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-            <input class="search-form__input" type="search" id="site-search" name="site-search" placeholder="Поиск:">
+            <label class="search-form__label" for="site-search">
+              <span class="visually-hidden">Поиск по сайту</span>
+              <input class="search-form__input" type="search" id="site-search" name="site-search" placeholder="Поиск:">
+              <svg class="search-form__icon" width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" />
+              </svg>
+            </label>
           </form>
           <a class="header-menu__link header-menu__link_bookmarks" href="blank.html">Закладки: <span class="bookmarks-counter">0</span></a>
           <a class="header-menu__link header-menu__link_cart header-menu__link_cart-filled" href="blank.html">Корзина: <span class="cart-counter">10</span></a>
@@ -75,7 +81,7 @@
           <li class="main-nav-menu__item"><a href="blank.html">Компания</a></li>
           <li class="main-nav-menu__item"><a href="catalog.html">Каталог</a></li>
           <li class="main-nav-menu__item"><a href="blank.html">Новости</a></li>
-          <li class="main-nav-menu__item"><a href="blank.html">Спецпредложение</a></li>
+          <li class="main-nav-menu__item"><a href="blank.html">Спецпредложения</a></li>
           <li class="main-nav-menu__item"><a href="blank.html">Доставка</a></li>
           <li class="main-nav-menu__item"><a href="blank.html">Контакты</a></li>
         </ul>
@@ -119,9 +125,9 @@
 
               <div class="range-slider">
                 <div class="range-slider__bar">
-                  <div class="range-slider__progress" style="margin-left: 0%; width: 78%;"></div>
+                  <div class="range-slider__progress" style="left: 0%; width: 79%;"></div>
                   <button class="range-slider__toggler" style="left: 0;" type="button" aria-label="Выбрать минимальное значение"></button>
-                  <button class="range-slider__toggler" style="left: 78%;" type="button" aria-label="Выбрать максимальное значение"></button>
+                  <button class="range-slider__toggler" style="left: 79%;" type="button" aria-label="Выбрать максимальное значение"></button>
                 </div>
               </div>
 
@@ -224,7 +230,7 @@
             <li class="products-list__item">
               <a class="products-list__card" href="blank.html">
                 <div class="products-list__image-container">
-                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 6000">
                 </div>
                 <h3 class="products-list__name">Перфоратор BOSCH BFG 6000</h3>
                 <div class="products-list__price-list">
@@ -240,7 +246,7 @@
             <li class="products-list__item">
               <a class="products-list__card" href="blank.html">
                 <div class="products-list__image-container">
-                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 6000">
                 </div>
                 <h3 class="products-list__name">Перфоратор BOSCH BFG 6000</h3>
                 <div class="products-list__price-list">
@@ -256,7 +262,7 @@
             <li class="products-list__item products-list__item_new">
               <a class="products-list__card" href="blank.html">
                 <div class="products-list__image-container">
-                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 6000">
                 </div>
                 <h3 class="products-list__name">Перфоратор BOSCH BFG 6000</h3>
                 <div class="products-list__price-list">
@@ -272,7 +278,7 @@
             <li class="products-list__item products-list__item_new">
               <a class="products-list__card" href="blank.html">
                 <div class="products-list__image-container">
-                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-3000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </div>
                 <h3 class="products-list__name">Перфоратор BOSCH BFG 3000</h3>
                 <div class="products-list__price-list">
@@ -288,7 +294,7 @@
             <li class="products-list__item">
               <a class="products-list__card" href="blank.html">
                 <div class="products-list__image-container">
-                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 6000">
                 </div>
                 <h3 class="products-list__name">Перфоратор BOSCH BFG 6000</h3>
                 <div class="products-list__price-list">
@@ -304,7 +310,7 @@
             <li class="products-list__item products-list__item_new">
               <a class="products-list__card" href="blank.html">
                 <div class="products-list__image-container">
-                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-2000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 2000">
                 </div>
                 <h3 class="products-list__name">Перфоратор BOSCH BFG 2000</h3>
                 <div class="products-list__price-list">
@@ -319,7 +325,7 @@
             <li class="products-list__item products-list__item_new">
               <a class="products-list__card" href="blank.html">
                 <div class="products-list__image-container">
-                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-3000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 3000">
                 </div>
                 <h3 class="products-list__name">Перфоратор BOSCH BFG 3000</h3>
                 <div class="products-list__price-list">
@@ -335,7 +341,7 @@
             <li class="products-list__item">
               <a class="products-list__card" href="blank.html">
                 <div class="products-list__image-container">
-                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 6000">
                 </div>
                 <h3 class="products-list__name">Перфоратор BOSCH BFG 6000</h3>
                 <div class="products-list__price-list">
@@ -351,7 +357,7 @@
             <li class="products-list__item products-list__item_new">
               <a class="products-list__card" href="blank.html">
                 <div class="products-list__image-container">
-                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+                  <img class="products-list__image" src="img/products/perforator_bosch-bfg-2000.jpg" width="220" height="170" alt="Перфоратор BOSCH BFG 2000">
                 </div>
                 <h3 class="products-list__name">Перфоратор BOSCH BFG 2000</h3>
                 <div class="products-list__price-list">
@@ -402,33 +408,37 @@
     <footer class="main-footer">
       <div class="footer-menu">
         <div class="wrapper">
-          <a class="footer-logo" href="index.html">
-            <img src="img/technomart-logo.svg" width="137" height="27" alt="Логотип интернет-магазина «Техномарт»">
-          </a>
+          <div class="wrapper-company-info">
+            <a class="footer-logo" href="index.html">
+              <img src="img/technomart-logo.svg" width="137" height="22" alt="Логотип интернет-магазина «Техномарт»">
+            </a>
 
-          <ul class="footer-nav-menu">
-            <li class="footer-nav-menu__item"><a href="blank.html">Компания</a></li>
-            <li class="footer-nav-menu__item"><a href="blank.html">Новости</a></li>
-            <li class="footer-nav-menu__item"><a href="catalog.html">Каталог</a></li>
-            <li class="footer-nav-menu__item"><a href="blank.html">Доставка</a></li>
-            <li class="footer-nav-menu__item"><a href="blank.html">Контакты</a></li>
-          </ul>
+            <section class="footer-contacts">
+              <h2 class="footer-contacts__title visually-hidden">Как нас найти</h2>
 
-          <section class="footer-contacts">
-            <h2 class="footer-contacts__title visually-hidden">Как нас найти</h2>
+              <address class="footer-contacts__container">
+                <p class="footer-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                <a class="footer-contacts__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+              </address>
+            </section>
+          </div>
 
-            <address class="footer-contacts__container">
-              <p class="footer-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-              <a class="footer-contacts__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
-            </address>
-          </section>
+          <div class="wrapper-menus">
+            <ul class="footer-nav-menu">
+              <li class="footer-nav-menu__item"><a href="blank.html">Компания</a></li>
+              <li class="footer-nav-menu__item"><a href="blank.html">Новости</a></li>
+              <li class="footer-nav-menu__item"><a href="catalog.html">Каталог</a></li>
+              <li class="footer-nav-menu__item"><a href="blank.html">Доставка</a></li>
+              <li class="footer-nav-menu__item"><a href="blank.html">Контакты</a></li>
+            </ul>
 
-          <ul class="footer-catalog-menu">
-            <li class="footer-catalog-menu__item"><a href="blank.html">Материалы</a></li>
-            <li class="footer-catalog-menu__item"><a href="blank.html">Техника</a></li>
-            <li class="footer-catalog-menu__item"><a href="blank.html">Инструмент</a></li>
-            <li class="footer-catalog-menu__item"><a href="blank.html">Спецпредложения</a></li>
-          </ul>
+            <ul class="footer-catalog-menu">
+              <li class="footer-catalog-menu__item"><a href="blank.html">Материалы</a></li>
+              <li class="footer-catalog-menu__item"><a href="blank.html">Техника</a></li>
+              <li class="footer-catalog-menu__item"><a href="blank.html">Инструмент</a></li>
+              <li class="footer-catalog-menu__item"><a href="blank.html">Спецпредложения</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 
@@ -444,7 +454,7 @@
             <ul class="footer-socials-list">
               <li class="footer-socials-list__item">
                 <a class="footer-socials-list__button" href="#">
-                  <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M24.5403 25.7281C25.4609 25.4384 26.6395 27.6406 27.8943 28.4834C28.836 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8232 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.3669 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7992 15.1128C22.388 15.0153 22.0876 14.9516 21.0389 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3575 15.9444C17.6079 15.9772 18.1693 16.0944 18.4697 16.4937C18.8559 17.0112 18.8443 18.1709 18.8443 18.1709C18.8443 18.1709 19.0649 21.3687 18.3243 21.7653C17.8159 22.0372 17.1206 21.4822 15.6252 18.9378C14.8615 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.73 15.6116 13.393 15.5562 13.393 15.5562L9.81656 15.5787C9.81656 15.5787 9.27923 15.5937 9.08182 15.8244C8.90656 16.0287 9.06738 16.4506 9.06738 16.4506C9.06738 16.4506 11.8686 22.9016 15.0406 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4338 28.6437C23.6495 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.61 26.0187 24.5403 25.7281Z"
                       fill="white" />
@@ -454,7 +464,7 @@
               </li>
               <li class="footer-socials-list__item">
                 <a class="footer-socials-list__button" href="#">
-                  <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
                     <path d="M28 15V11H24C21.7909 11 20 12.7909 20 15V19H16V23H20V33H24V23H28V19H24V15H28Z" fill="white" />
                   </svg>
                   <span class="visually-hidden">Фейсбук</span>
@@ -462,7 +472,7 @@
               </li>
               <li class="footer-socials-list__item">
                 <a class="footer-socials-list__button" href="#">
-                  <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M14 11H29C30.65 11 32 12.35 32 14V29C32 30.65 30.65 32 29 32H14C12.35 32 11 30.65 11 29V14C11 12.35 12.35 11 14 11ZM25 21.5C25 19.57 23.43 18 21.5 18C19.57 18 18 19.57 18 21.5C18 23.43 19.57 25 21.5 25C23.43 25 25 23.43 25 21.5ZM14 29V20H15.181C15.0626 20.4913 15.0019 20.9947 15 21.5C15 25.0899 17.9101 28 21.5 28C25.0899 28 28 25.0899 28 21.5C27.9986 20.9946 27.9379 20.4912 27.819 20H29V29H14ZM25 18H29V14H25V18Z"
                       fill="white" />
@@ -495,7 +505,7 @@
       <h2 class="visually-hidden">Статус добавления товара в корзину</h2>
       <p class="modal__text modal__text_success">Товар добавлен в корзину!</p>
 
-      <div class="modal_gray-bg">
+      <div class="modal__gray-bg">
         <a class="button" href="blank.html">Оформить заказ</a>
         <a class="button button_no-fill" href="#">Продолжить покупки</a>
       </div>
