@@ -1946,6 +1946,10 @@ img {
   height: 449px;
 }
 
+.modal__interactive-map iframe {
+  border: none;
+}
+
 /* Modals -- successful cart */
 .modal_successful-cart {
   box-sizing: border-box;
@@ -2088,6 +2092,7 @@ img {
 
 .footer-nav-menu__item a:active,
 .footer-catalog-menu__item a:active {
+  text-decoration: none;
   opacity: 0.5;
 }
 
@@ -2187,5 +2192,6 @@ img {
 }
 
 .footer-info-links__item a:active {
+  text-decoration: none;
   color: var(--color-accent);
 }

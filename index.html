@@ -10,7 +10,7 @@
     <link rel="manifest" href="manifest.webmanifest">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
 
@@ -350,7 +350,7 @@
             Вы можете забрать товар сами,<br>заехав в наш офис:
           </p>
           <a class="office-info__map" href="#">
-            <img src="img/map.png" width="300" height="158" alt="Карта проезда к офису">
+            <img src="img/map.png" width="300" height="158" alt="Офис компании расположен по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
           </a>
           <a class="button" href="#">Заблудились? Напишите нам!</a>
         </section>
@@ -485,9 +485,9 @@
 
     <div class="modal modal_map">
       <h2 class="visually-hidden">Карта</h2>
-      <div class="modal__map" style="position:relative;overflow:hidden;">
-        <iframe src="https://yandex.ru/map-widget/v1/-/CCUMbMxH~A" width="943" height="449" frameborder="0"
-          allowfullscreen="true"></iframe>
+      <div class="modal__interactive-map">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CCUQUCaBWA" width="943" height="449"
+          allowfullscreen></iframe>
       </div>
       <button class="modal__close" type="button" aria-label="Закрыть"></button>
     </div>
