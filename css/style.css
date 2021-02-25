@@ -1872,7 +1872,7 @@ img {
 /* Modals -- feedback */
 .modal_feedback {
   width: 620px;
-  min-height: 430px;
+  min-height: 423px;
 }
 
 .feedback-form {
@@ -1885,6 +1885,7 @@ img {
   display: grid;
   grid-template-columns: 220px 220px;
   grid-gap: 20px;
+  grid-row-gap: 13px;
   box-sizing: border-box;
   width: 100%;
   padding: 0 80px 37px;
@@ -1892,6 +1893,7 @@ img {
 
 .feedback-form__item {
   display: grid;
+  grid-row-gap: 10px;
 }
 
 .feedback-form__item_textarea {
@@ -1903,7 +1905,6 @@ img {
 }
 
 .feedback-form__label {
-  margin-bottom: 11px;
   font-family: "Cuprum", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -1912,7 +1913,7 @@ img {
 
 .feedback-form__input,
 .feedback-form__textarea {
-  padding: 7px 8px 7px 12px;
+  padding: 6px 8px 6px 12px;
   font-family: inherit;
   font-size: 13px;
   line-height: 24px;
@@ -1926,11 +1927,10 @@ img {
 }
 
 .feedback-form__textarea {
-  width: 100%;
-  min-height: 114px;
+  min-height: 98px;
 }
 
-.feedback-form .modal_gray-bg {
+.feedback-form .modal__gray-bg {
   padding: 37px 80px;
 }
 
