@@ -2046,8 +2046,8 @@ img {
 .modal_successful-cart .modal__gray-bg {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 37px 113px 37px;
+  justify-content: center;
+  padding: 37px;
 }
 
 .modal_successful-cart .button {
