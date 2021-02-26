@@ -10,7 +10,7 @@
     <link rel="manifest" href="manifest.webmanifest">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body inner-page">
 
@@ -21,8 +21,14 @@
             <img src="img/technomart-logo.svg" width="108" height="18" alt="Логотип интернет-магазина «Техномарт»">
           </a>
           <form class="search-form" method="GET" action="https://echo.htmlacademy.ru/">
-            <label class="visually-hidden" for="site-search">Поиск по сайту</label>
-            <input class="search-form__input" type="search" id="site-search" name="site-search" placeholder="Поиск:">
+            <label class="search-form__label" for="site-search">
+              <span class="visually-hidden">Поиск по сайту</span>
+              <input class="search-form__input" type="search" id="site-search" name="site-search" placeholder="Поиск:">
+              <svg class="search-form__icon" width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" />
+              </svg>
+            </label>
           </form>
           <a class="header-menu__link header-menu__link_bookmarks" href="blank.html">Закладки: <span
               class="bookmarks-counter">0</span></a>
@@ -42,8 +48,18 @@
           <p class="header-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </address>
         <div class="header-user-menu">
-          <a class="header-user-menu__login" href="blank.html">Войти</a>
-          <a class="header-user-menu__register" href="blank.html">Регистрация</a>
+          <div class="authorization-links">
+            <a class="header-user-menu__login" href="blank.html">
+              <svg class="header-user-menu__login-icon" width="21" height="17" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.875 8.5L6 0v6H0v5h6v6l8.875-8.5z" />
+                <path
+                  d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
+              </svg>
+              Войти
+            </a>
+            <a class="header-user-menu__register" href="blank.html">Регистрация</a>
+          </div>
         </div>
       </div>
 
@@ -53,7 +69,7 @@
           <li class="main-nav-menu__item"><a href="blank.html">Компания</a></li>
           <li class="main-nav-menu__item"><a href="catalog.html">Каталог</a></li>
           <li class="main-nav-menu__item"><a href="blank.html">Новости</a></li>
-          <li class="main-nav-menu__item"><a href="blank.html">Спецпредложение</a></li>
+          <li class="main-nav-menu__item"><a href="blank.html">Спецпредложения</a></li>
           <li class="main-nav-menu__item"><a href="blank.html">Доставка</a></li>
           <li class="main-nav-menu__item"><a href="blank.html">Контакты</a></li>
         </ul>
@@ -81,9 +97,9 @@
         </div>
       </div>
 
-      <section class="blank wrapper">
+      <div class="blank wrapper">
         <p class="section-description">Верстальщик в ужасе кричит: о нет, что вы наделали, зачем нажали на эту ссылку! Эта страница пуста!</p>
-      </section>
+      </div>
     </main>
 
     <footer class="main-footer">
