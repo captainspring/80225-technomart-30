@@ -586,7 +586,6 @@ img {
     "promo promo services"
     "promo promo services";
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(3, 123px);
   grid-gap: 20px;
   margin-bottom: 59px;
   padding-top: 60px;
@@ -754,6 +753,10 @@ img {
   width: 174px;
   margin-top: auto;
   margin-left: -1px;
+}
+
+.promo-slider__controls {
+  height: 0;
 }
 
 .promo-slider__arrow {
