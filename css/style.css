@@ -190,10 +190,10 @@ img {
 .header-logo::after {
   content: "";
   position: absolute;
-  bottom: -5px;
+  top: 100%;
   left: 0;
   display: block;
-  width: 220px;
+  width: 100%;
   height: 5px;
   background-color: var(--color-accent-medium);
 }
@@ -269,7 +269,7 @@ img {
 }
 
 .header-menu__link_cart {
-  padding-left: 23px;
+  padding-left: 32px;
 }
 
 .header-menu__link_bookmarks::before,
@@ -292,7 +292,7 @@ img {
 }
 
 .header-menu__link_cart::before {
-  left: 13px;
+  left: 26px;
   margin-right: 8px;
   background-image: url("../img/icons-ui/cart.svg");
 }
@@ -316,7 +316,12 @@ img {
 .header-menu__link_cart-filled {
   justify-self: end;
   width: 136px;
+  padding-left: 23px;
   background-color: var(--color-accent);
+}
+
+.header-menu__link_cart-filled::before {
+  left: 13px;
 }
 
 .header-menu__link_order {
@@ -537,11 +542,11 @@ img {
 .user-links-list__item:not(:first-child) .user-links-list__link::before {
   content: "•";
   display: inline-block;
+  vertical-align: middle;
   margin-right: 14px;
   font-family: inherit;
   font-size: 10px;
   color: var(--color-basic-dark);
-  vertical-align: middle;
 }
 
 .user-links-list__link:hover {
@@ -636,7 +641,7 @@ img {
 
 .promo-catalog-list__item {
   position: relative;
-  padding: 21px 115px 20px 23px;
+  padding: 21px 115px 21px 23px;
   font-family: "Cuprum", "Tahoma", sans-serif;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -1074,7 +1079,8 @@ img {
   vertical-align: middle;
 }
 
-.products-list__item:hover .products-list__image-container {
+.products-list__item:hover .products-list__image-container,
+.products-list__item:focus-within .products-list__image-container {
   visibility: hidden;
 }
 
@@ -1121,12 +1127,13 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  display: none;
   padding: 37px 44px 38px 40px;
+  visibility: hidden;
 }
 
-.products-list__item:hover .products-list__buttons {
-  display: block;
+.products-list__item:hover .products-list__buttons,
+.products-list__item:focus-within .products-list__buttons {
+  visibility: visible;
 }
 
 .products-list__buy-button,
@@ -1247,7 +1254,7 @@ img {
 
 /* Services -- general */
 .services {
-  padding-bottom: 54px;
+  padding-bottom: 49px;
   background-color: var(--color-basic-light);
 }
 
@@ -1413,6 +1420,10 @@ img {
   margin-bottom: 3px;
 }
 
+.company-info-wrapper .section-title {
+  padding-top: 70px;
+}
+
 .partners-list {
   margin: 0;
   margin-bottom: 20px;
@@ -1452,6 +1463,10 @@ img {
   width: 300px;
   height: 158px;
   margin-bottom: 27px;
+}
+
+.office-info__map img {
+  display: block;
 }
 
 /* Catalog
@@ -1905,7 +1920,7 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.modal.show {
+.modal_show {
   display: block;
 }
 
@@ -2074,7 +2089,7 @@ img {
 
 /* Footer -- menu */
 .footer-menu {
-  padding-bottom: 54px;
+  padding-bottom: 55px;
   font-family: "Cuprum", "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 18px;

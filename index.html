@@ -22,9 +22,8 @@
           </a>
           <form class="search-form" method="GET" action="https://echo.htmlacademy.ru/">
             <label class="search-form__label" for="site-search">
-              <span class="visually-hidden">Поиск по сайту</span>
-              <input class="search-form__input" type="search" id="site-search" name="site-search" placeholder="Поиск:">
-              <svg class="search-form__icon" width="17" height="17" xmlns="http://www.w3.org/2000/svg">
+              <input class="search-form__input" type="search" id="site-search" name="site-search" aria-label="Поиск по сайту" placeholder="Поиск:">
+              <svg class="search-form__icon" aria-hidden="true" focusable="false" width="17" height="17" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M13.458 12.044L17 15.586 15.586 17l-3.542-3.542A7.465 7.465 0 017.5 15 7.5 7.5 0 1115 7.5c0 1.643-.542 3.24-1.542 4.544zM7.5 2A5.506 5.506 0 002 7.5 5.506 5.506 0 007.5 13c3.032 0 5.5-2.468 5.5-5.5C13 4.467 10.532 2 7.5 2z" />
               </svg>
@@ -48,7 +47,7 @@
         <div class="header-user-menu">
           <div class="authorization-links">
             <a class="header-user-menu__login" href="blank.html">
-              <svg class="header-user-menu__login-icon" width="21" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="header-user-menu__login-icon" aria-hidden="true" focusable="false" width="21" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M14.875 8.5L6 0v6H0v5h6v6l8.875-8.5z" />
                 <path
                   d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
@@ -97,7 +96,7 @@
         <div class="promo-slider">
           <div class="promo-slider__slides">
             <div class="promo-slider__slide promo-slider__slide_current">
-              <img class="promo-slider__image" src="img/promo-slider/perforator.jpg" width="620" height="266" alt="Рабочий с перфоратором">
+              <img class="promo-slider__image" src="img/promo-slider/perforator.jpg" width="620" height="266" alt="Рабочий с перфоратором Bosch пробивает отверстия в стене на стройке">
               <div class="promo-slider__content">
                 <h3 class="promo-slider__title">Перфораторы</h3>
                 <p class="promo-slider__slogan">Настоящие мужские игрушки</p>
@@ -106,7 +105,7 @@
             </div>
 
             <div class="promo-slider__slide">
-              <img class="promo-slider__image" src="img/promo-slider/drill.jpg" width="620" height="266" alt="Рабочий с дрелью">
+              <img class="promo-slider__image" src="img/promo-slider/drill.jpg" width="620" height="266" alt="Рабочий с дрелью  Bosch сверлит кирпичную стену на стройке">
               <div class="promo-slider__content">
                 <h3 class="promo-slider__title">Дрели</h3>
                 <p class="promo-slider__slogan">Соседям на радость!</p>
@@ -115,19 +114,11 @@
             </div>
           </div>
           <div class="promo-slider__controls">
-            <button class="promo-slider__arrow promo-slider__arrow_left" type="button">
-              <span class="visually-hidden">Назад</span>
-            </button>
-            <button class="promo-slider__arrow promo-slider__arrow_right" type="button">
-              <span class="visually-hidden">Вперед</span>
-            </button>
+            <button class="promo-slider__arrow promo-slider__arrow_left" aria-label="К предыдущему слайду" type="button"></button>
+            <button class="promo-slider__arrow promo-slider__arrow_right" aria-label="К следующему слайду" type="button"></button>
             <div class="promo-slider__bullets">
-              <button class="promo-slider__bullet" type="button">
-                <span class="visually-hidden">Слайд-1</span>
-              </button>
-              <button class="promo-slider__bullet promo-slider__bullet_current" type="button">
-                <span class="visually-hidden">Слайд-2</span>
-              </button>
+              <button class="promo-slider__bullet" aria-label="Слайд 1" type="button"></button>
+              <button class="promo-slider__bullet promo-slider__bullet_current" aria-label="Слайд 2" type="button"></button>
             </div>
           </div>
         </div>
@@ -155,12 +146,16 @@
             <a class="products-list__card" href="blank.html">
               <div class="products-list__image-container">
                 <img class="products-list__image" src="img/products/perforator_bosch-bfg-9000.jpg" width="220" height="170"
-                  alt="Перфоратор BOSCH BFG 9000">
+                  alt="Перфоратор BOSCH BFG 9000 в черно-синих цветах с белой вставкой сверху, с двумя рукоятями и длинным буром по бетону X-типа">
               </div>
               <h3 class="products-list__name">Перфоратор BOSCH BFG 9000</h3>
               <div class="products-list__price-list">
-                <p class="products-list__price products-list__price_old">32500 Р.</p>
-                <p class="products-list__price">25500 Р.</p>
+                <p class="products-list__price products-list__price_old">
+                  <span class="visually-hidden">Старая цена</span> 32500 Р.
+                </p>
+                <p class="products-list__price">
+                  <span class="visually-hidden">Новая цена</span> 25500 Р.
+                </p>
               </div>
             </a>
             <div class="products-list__buttons">
@@ -173,12 +168,16 @@
             <a class="products-list__card" href="blank.html">
               <div class="products-list__image-container">
                 <img class="products-list__image" src="img/products/perforator_bosch-bfg-3000.jpg" width="220" height="170"
-                  alt="Перфоратор BOSCH BFG 3000">
+                  alt="Перфоратор BOSCH BFG 3000 в черно-синих цветах, с двумя рукоятями и коротким буром по бетону A-типа">
               </div>
               <h3 class="products-list__name">Перфоратор BOSCH BFG 3000</h3>
               <div class="products-list__price-list">
-                <p class="products-list__price products-list__price_old">22500 Р.</p>
-                <p class="products-list__price">15500 Р.</p>
+                <p class="products-list__price products-list__price_old">
+                  <span class="visually-hidden">Старая цена</span> 22500 Р.
+                </p>
+                <p class="products-list__price">
+                  <span class="visually-hidden">Новая цена</span> 15500 Р.
+                </p>
               </div>
             </a>
             <div class="products-list__buttons">
@@ -191,12 +190,16 @@
             <a class="products-list__card" href="blank.html">
               <div class="products-list__image-container">
                 <img class="products-list__image" src="img/products/perforator_bosch-bfg-6000.jpg" width="220" height="170"
-                  alt="Перфоратор BOSCH BFG 6000">
+                  alt="Перфоратор BOSCH BFG 6000 в черно-синих цветах, с двумя рукоятями и средней длины буром по бетону A-типа">
               </div>
               <h3 class="products-list__name">Перфоратор BOSCH BFG 6000</h3>
               <div class="products-list__price-list">
-                <p class="products-list__price products-list__price_old">30500 Р.</p>
-                <p class="products-list__price">25500 Р.</p>
+                <p class="products-list__price products-list__price_old">
+                  <span class="visually-hidden">Старая цена</span> 30500 Р.
+                </p>
+                <p class="products-list__price">
+                  <span class="visually-hidden">Новая цена</span> 25500 Р.
+                </p>
               </div>
             </a>
             <div class="products-list__buttons">
@@ -209,12 +212,16 @@
             <a class="products-list__card" href="blank.html">
               <div class="products-list__image-container">
                 <img class="products-list__image" src="img/products/perforator_bosch-bfg-2000.jpg" width="220" height="170"
-                  alt="Перфоратор BOSCH BFG 2000">
+                  alt="Перфоратор BOSCH BFG 2000 в черно-синих цветах, с двумя рукоятями и коротким буром по бетону A-типа">
               </div>
               <h3 class="products-list__name">Перфоратор BOSCH BFG 2000</h3>
               <div class="products-list__price-list">
-                <p class="products-list__price products-list__price_old">22500 Р.</p>
-                <p class="products-list__price">12500 Р.</p>
+                <p class="products-list__price products-list__price_old">
+                  <span class="visually-hidden">Старая цена</span> 22500 Р.
+                </p>
+                <p class="products-list__price">
+                  <span class="visually-hidden">Новая цена</span> 12500 Р.
+                </p>
               </div>
             </a>
             <div class="products-list__buttons">
@@ -397,7 +404,7 @@
       <div class="footer-info">
         <div class="wrapper">
           <p class="copyright">
-            © 2010–2019 Компания «Техномарт» Все права защищены
+            © 2010-2019 Компания «Техномарт» Все права защищены
           </p>
 
           <section class="footer-socials">
@@ -405,31 +412,28 @@
 
             <ul class="footer-socials-list">
               <li class="footer-socials-list__item">
-                <a class="footer-socials-list__button" href="#">
-                  <svg width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                <a class="footer-socials-list__button" href="#" aria-label="Логотип Вконтакте">
+                  <svg role="img" aria-hidden="true" focusable="false" width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M24.5403 25.7281C25.4609 25.4384 26.6395 27.6406 27.8943 28.4834C28.836 29.1219 29.5573 28.9841 29.5573 28.9841L32.9017 28.9372C32.9017 28.9372 34.6495 28.8322 33.8232 27.4803C33.7549 27.3678 33.3389 26.4781 31.334 24.6472C29.2376 22.7319 29.5217 23.0422 32.0456 19.7309C33.5835 17.7125 34.1988 16.4797 34.0062 15.9547C33.8213 15.4494 32.6918 15.5806 32.6918 15.5806L28.9237 15.6059C28.5568 15.6069 28.2458 15.7175 28.1042 16.0887C28.1013 16.0925 27.5062 17.6506 26.7127 18.9753C25.0362 21.7775 24.3669 21.9266 24.0896 21.7512C23.4531 21.3453 23.6139 20.1228 23.6139 19.2537C23.6139 16.5378 24.0299 15.4053 22.7992 15.1128C22.388 15.0153 22.0876 14.9516 21.0389 14.9422C19.6985 14.9225 18.5603 14.9422 17.9151 15.2506C17.4866 15.4597 17.1582 15.9181 17.3575 15.9444C17.6079 15.9772 18.1693 16.0944 18.4697 16.4937C18.8559 17.0112 18.8443 18.1709 18.8443 18.1709C18.8443 18.1709 19.0649 21.3687 18.3243 21.7653C17.8159 22.0372 17.1206 21.4822 15.6252 18.9378C14.8615 17.6366 14.2847 16.1984 14.2847 16.1984C14.2847 16.1984 14.173 15.9312 13.9708 15.785C13.73 15.6116 13.393 15.5562 13.393 15.5562L9.81656 15.5787C9.81656 15.5787 9.27923 15.5937 9.08182 15.8244C8.90656 16.0287 9.06738 16.4506 9.06738 16.4506C9.06738 16.4506 11.8686 22.9016 15.0406 26.1509C17.9488 29.1341 21.2537 28.9362 21.2537 28.9362H22.7511C22.7511 28.9362 23.2027 28.8856 23.4338 28.6437C23.6495 28.4187 23.6399 27.9959 23.6399 27.9959C23.6399 27.9959 23.61 26.0187 24.5403 25.7281Z"
                       fill="white" />
                   </svg>
-                  <span class="visually-hidden">Вконтакте</span>
                 </a>
               </li>
               <li class="footer-socials-list__item">
-                <a class="footer-socials-list__button" href="#">
-                  <svg width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                <a class="footer-socials-list__button" href="#" aria-label="Логотип Фейсбука">
+                  <svg role="img" aria-hidden="true" focusable="false" width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
                     <path d="M28 15V11H24C21.7909 11 20 12.7909 20 15V19H16V23H20V33H24V23H28V19H24V15H28Z" fill="white" />
                   </svg>
-                  <span class="visually-hidden">Фейсбук</span>
                 </a>
               </li>
               <li class="footer-socials-list__item">
-                <a class="footer-socials-list__button" href="#">
-                  <svg width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                <a class="footer-socials-list__button" href="#" aria-label="Логотип Инстаграма">
+                  <svg role="img" aria-hidden="true" focusable="false" width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M14 11H29C30.65 11 32 12.35 32 14V29C32 30.65 30.65 32 29 32H14C12.35 32 11 30.65 11 29V14C11 12.35 12.35 11 14 11ZM25 21.5C25 19.57 23.43 18 21.5 18C19.57 18 18 19.57 18 21.5C18 23.43 19.57 25 21.5 25C23.43 25 25 23.43 25 21.5ZM14 29V20H15.181C15.0626 20.4913 15.0019 20.9947 15 21.5C15 25.0899 17.9101 28 21.5 28C25.0899 28 28 25.0899 28 21.5C27.9986 20.9946 27.9379 20.4912 27.819 20H29V29H14ZM25 18H29V14H25V18Z"
                       fill="white" />
                   </svg>
-                  <span class="visually-hidden">Инстаграм</span>
                 </a>
               </li>
             </ul>
@@ -444,7 +448,7 @@
 
             <div class="footer-info-links__item">
               <p>
-                Разработано —
+                Разработано –
               </p>
               <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
             </div>
@@ -480,7 +484,7 @@
           <button class="button" type="submit">Отправить</button>
         </div>
       </form>
-      <button class="modal__close" type="button" aria-label="Закрыть"></button>
+      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
     </div>
 
     <div class="modal modal_map">
@@ -489,7 +493,7 @@
         <iframe src="https://yandex.ru/map-widget/v1/-/CCUQUCaBWA" width="943" height="449"
           allowfullscreen title="Офис компании расположен по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"></iframe>
       </div>
-      <button class="modal__close" type="button" aria-label="Закрыть"></button>
+      <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
     </div>
   </body>
 </html>
