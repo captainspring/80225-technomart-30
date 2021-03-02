@@ -1644,6 +1644,17 @@ img {
   margin-bottom: 20px;
 }
 
+.filter-list__checkbox,
+.filter-list__radio {
+  visibility: visible;
+}
+
+.filter-list__checkbox:focus + .filter-list__label,
+.filter-list__radio:focus + .filter-list__label {
+  outline: Highlight auto 1px;
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
 .filter-list__checkbox:disabled + .filter-list__label,
 .filter-list__radio:disabled + .filter-list__label {
   opacity: 0.4;
