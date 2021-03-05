@@ -1,9 +1,9 @@
-const feedbackLink = document.querySelector('.office-info .button');
-const feedbackPopup = document.querySelector('.modal_feedback');
-
 const popupClose = document.querySelector('.modal__close');
 
 ////// Feedback popup //////
+const feedbackLink = document.querySelector('.office-info .button');
+const feedbackPopup = document.querySelector('.modal_feedback');
+
 const feedbackForm = feedbackPopup.querySelector('.feedback-form');
 const feedbackName = feedbackForm.querySelector('#feedback-name');
 const feedbackEmail = feedbackForm.querySelector('#feedback-email');
@@ -87,3 +87,15 @@ window.addEventListener('keydown', function (evt) {
     }
   }
 });
+
+////// Order popup //////
+let buyButtons = document.querySelectorAll('.products-list__buy-button');
+const successfulCartPopup = document.querySelector('.modal_successful-cart');
+
+for (buyButton of buyButtons) {
+  buyButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+
+    successfulCartPopup.classList.add('modal_show');
+  });
+}
