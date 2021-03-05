@@ -10,7 +10,7 @@
     <link rel="manifest" href="manifest.webmanifest">
 
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
 
@@ -371,12 +371,12 @@
       <div class="footer-menu">
         <div class="wrapper">
           <div class="wrapper-company-info">
-            <a class="footer-logo" href="index.html">
+            <a class="footer-logo" href="index.html" aria-label="Перейти на главную страницу">
               <img src="img/technomart-logo.svg" width="137" height="22" alt="Логотип интернет-магазина «Техномарт»">
             </a>
 
             <section class="footer-contacts">
-              <h2 class="footer-contacts__title visually-hidden">Как нас найти</h2>
+              <h2 class="visually-hidden">Как нас найти</h2>
 
               <address class="footer-contacts__container">
                 <p class="footer-contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -411,7 +411,7 @@
           </p>
 
           <section class="footer-socials">
-            <h2 class="footer-socials-title visually-hidden">Социальные сети</h2>
+            <h2 class="visually-hidden">Социальные сети</h2>
 
             <ul class="footer-socials-list">
               <li class="footer-socials-list__item">
@@ -498,5 +498,7 @@
       </div>
       <button class="modal__close" type="button" aria-label="Закрыть модальное окно"></button>
     </div>
+
+    <script src="js/modal.js"></script>
   </body>
 </html>
