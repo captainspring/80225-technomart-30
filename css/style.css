@@ -2067,6 +2067,10 @@ img {
   cursor: pointer;
 }
 
+.modal_error-field {
+  border-color: var(--color-accent);
+}
+
 /* Modals -- map */
 .modal_map {
   width: 943px;
