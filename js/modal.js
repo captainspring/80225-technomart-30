@@ -1,5 +1,3 @@
-const popupClose = document.querySelector('.modal__close');
-
 ////// Feedback popup //////
 const feedbackLink = document.querySelector('.office-info .button');
 const feedbackPopup = document.querySelector('.modal_feedback');
@@ -9,6 +7,7 @@ if (feedbackPopup) {
   const feedbackName = feedbackForm.querySelector('#feedback-name');
   const feedbackEmail = feedbackForm.querySelector('#feedback-email');
   const feedbackText = feedbackForm.querySelector('#feedback-feedback');
+  const popupClose = feedbackPopup.querySelector('.modal__close');
 
   let isStorageSupport = true;
   let storageName = '';
@@ -94,10 +93,29 @@ if (feedbackPopup) {
 let buyButtons = document.querySelectorAll('.products-list__buy-button');
 const successfulCartPopup = document.querySelector('.modal_successful-cart');
 
-for (buyButton of buyButtons) {
-  buyButton.addEventListener('click', function (evt) {
+if (buyButtons) {
+  const popupClose = successfulCartPopup.querySelector('.modal__close');
+
+  for (buyButton of buyButtons) {
+    buyButton.addEventListener('click', function (evt) {
+      evt.preventDefault();
+
+      successfulCartPopup.classList.add('modal_show');
+    });
+  }
+
+  popupClose.addEventListener('click', function (evt) {
     evt.preventDefault();
 
-    successfulCartPopup.classList.add('modal_show');
+    successfulCartPopup.classList.remove('modal_show');
   });
-}
+
+  window.addEventListener('keydown', function (evt) {
+    if (evt.key === 'Escape') {
+      if (successfulCartPopup.classList.contains('modal_show')) {
+        evt.preventDefault();
+        successfulCartPopup.classList.remove('modal_show');
+      }
+    }
+  });
+};
