@@ -95,6 +95,7 @@ const successfulCartPopup = document.querySelector('.modal_successful-cart');
 
 if (buyButtons) {
   const popupClose = successfulCartPopup.querySelector('.modal__close');
+  const popupCloseButton = successfulCartPopup.querySelector('.button_no-fill');
 
   for (buyButton of buyButtons) {
     buyButton.addEventListener('click', function (evt) {
@@ -105,6 +106,12 @@ if (buyButtons) {
   }
 
   popupClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+
+    successfulCartPopup.classList.remove('modal_show');
+  });
+
+  popupCloseButton.addEventListener('click', function (evt) {
     evt.preventDefault();
 
     successfulCartPopup.classList.remove('modal_show');
