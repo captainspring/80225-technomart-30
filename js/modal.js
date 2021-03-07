@@ -1,24 +1,24 @@
-////// Slider //////
-const slider = document.querySelector('.promo-slider');
+////// Promo-slider //////
+const promoSlider = document.querySelector('.promo-slider');
 
-if (slider) {
-  let slides = slider.querySelectorAll('.promo-slider__slide');
-  let slidesNumber = slides.length - 1;
-  let firstSlide = slides[0];
-  let lastSlide = slides[slidesNumber];
+if (promoSlider) {
+  let promoSlides = promoSlider.querySelectorAll('.promo-slider__slide');
+  let promoSlidesNumber = promoSlides.length - 1;
+  let firstSlide = promoSlides[0];
+  let lastSlide = promoSlides[promoSlidesNumber];
 
-  let bullets = slider.querySelectorAll('.promo-slider__bullet');
+  let bullets = promoSlider.querySelectorAll('.promo-slider__bullet');
   let bulletsNumber = bullets.length - 1;
   let firstBullet = bullets[0];
   let lastBullet = bullets[bulletsNumber];
 
-  const arrowLeft = slider.querySelector('.promo-slider__arrow_left');
-  const arrowRight = slider.querySelector('.promo-slider__arrow_right');
+  const arrowLeft = promoSlider.querySelector('.promo-slider__arrow_left');
+  const arrowRight = promoSlider.querySelector('.promo-slider__arrow_right');
 
   arrowLeft.addEventListener('click', function () {
-    for (let i = 0; i < slides.length; i = i + 1) {
-      let currentSlide = slides[i];
-      let previousSlide = slides[i - 1];
+    for (let i = 0; i < promoSlides.length; i = i + 1) {
+      let currentSlide = promoSlides[i];
+      let previousSlide = promoSlides[i - 1];
 
       let currentBullet = bullets[i];
       let previousBullet = bullets[i - 1];
@@ -41,9 +41,9 @@ if (slider) {
   });
 
   arrowRight.addEventListener('click', function () {
-    for (let i = 0; i < slides.length; i = i + 1) {
-      let currentSlide = slides[i];
-      let nextSlide = slides[i + 1];
+    for (let i = 0; i < promoSlides.length; i = i + 1) {
+      let currentSlide = promoSlides[i];
+      let nextSlide = promoSlides[i + 1];
 
       let currentBullet = bullets[i];
       let nextBullet = bullets[i + 1];
@@ -68,15 +68,38 @@ if (slider) {
   for (let i = 0; i < bullets.length; i = i + 1) {
     bullets[i].addEventListener('click', function() {
       let clickedBullet = bullets[i];
-      let clickedSlide = slides[i];
+      let clickedSlide = promoSlides[i];
 
-      let activeBullet = slider.querySelector('.promo-slider__bullet_current');
-      let activeSlide = slider.querySelector('.promo-slider__slide_current');
+      let activeBullet = promoSlider.querySelector('.promo-slider__bullet_current');
+      let activeSlide = promoSlider.querySelector('.promo-slider__slide_current');
 
       activeBullet.classList.remove('promo-slider__bullet_current');
       activeSlide.classList.remove('promo-slider__slide_current');
       clickedBullet.classList.add('promo-slider__bullet_current');
       clickedSlide.classList.add('promo-slider__slide_current');
+    });
+  }
+}
+
+////// Services slider //////
+const servicesSlider = document.querySelector('.services-slider-tabs');
+
+if (servicesSlider) {
+  let tabs = servicesSlider.querySelectorAll('.services-slider-tabs-list__tab');
+  let serviceSlides = servicesSlider.querySelectorAll('.services-slider-info-list__item');
+
+  for (let i = 0; i < tabs.length; i = i + 1) {
+    tabs[i].addEventListener('click', function () {
+      let clickedTab = tabs[i];
+      let clickedSlide = serviceSlides[i];
+
+      let activeTab = servicesSlider.querySelector('.services-slider-tabs-list__tab_current');
+      let activeSlide = servicesSlider.querySelector('.services-slider-info-list__item_current');
+
+      activeTab.classList.remove('services-slider-tabs-list__tab_current');
+      activeSlide.classList.remove('services-slider-info-list__item_current');
+      clickedTab.classList.add('services-slider-tabs-list__tab_current');
+      clickedSlide.classList.add('services-slider-info-list__item_current');
     });
   }
 }
