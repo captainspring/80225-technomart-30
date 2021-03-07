@@ -64,6 +64,21 @@ if (slider) {
       }
     }
   });
+
+  for (let i = 0; i < bullets.length; i = i + 1) {
+    bullets[i].addEventListener('click', function() {
+      let clickedBullet = bullets[i];
+      let clickedSlide = slides[i];
+
+      let activeBullet = slider.querySelector('.promo-slider__bullet_current');
+      let activeSlide = slider.querySelector('.promo-slider__slide_current');
+
+      activeBullet.classList.remove('promo-slider__bullet_current');
+      activeSlide.classList.remove('promo-slider__slide_current');
+      clickedBullet.classList.add('promo-slider__bullet_current');
+      clickedSlide.classList.add('promo-slider__slide_current');
+    });
+  }
 }
 
 ////// Feedback popup //////
