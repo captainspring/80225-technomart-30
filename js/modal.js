@@ -7,6 +7,11 @@ if (slider) {
   let firstSlide = slides[0];
   let lastSlide = slides[slidesNumber];
 
+  let bullets = slider.querySelectorAll('.promo-slider__bullet');
+  let bulletsNumber = bullets.length - 1;
+  let firstBullet = bullets[0];
+  let lastBullet = bullets[bulletsNumber];
+
   const arrowLeft = slider.querySelector('.promo-slider__arrow_left');
   const arrowRight = slider.querySelector('.promo-slider__arrow_right');
 
@@ -15,14 +20,20 @@ if (slider) {
       let currentSlide = slides[i];
       let previousSlide = slides[i - 1];
 
+      let currentBullet = bullets[i];
+      let previousBullet = bullets[i - 1];
+
       if (currentSlide.classList.contains('promo-slider__slide_current')) {
         currentSlide.classList.remove('promo-slider__slide_current');
+        currentBullet.classList.remove('promo-slider__bullet_current');
 
         if (!previousSlide) {
           lastSlide.classList.add('promo-slider__slide_current');
+          lastBullet.classList.add('promo-slider__bullet_current');
           break
         } else {
           previousSlide.classList.add('promo-slider__slide_current');
+          previousBullet.classList.add('promo-slider__bullet_current');
           break
         }
       }
@@ -34,14 +45,20 @@ if (slider) {
       let currentSlide = slides[i];
       let nextSlide = slides[i + 1];
 
+      let currentBullet = bullets[i];
+      let nextBullet = bullets[i + 1];
+
       if (currentSlide.classList.contains('promo-slider__slide_current')) {
         currentSlide.classList.remove('promo-slider__slide_current');
+        currentBullet.classList.remove('promo-slider__bullet_current');
 
         if (!nextSlide) {
           firstSlide.classList.add('promo-slider__slide_current');
+          firstBullet.classList.add('promo-slider__bullet_current');
           break
         } else {
           nextSlide.classList.add('promo-slider__slide_current');
+          nextBullet.classList.add('promo-slider__bullet_current');
           break
         }
       }
