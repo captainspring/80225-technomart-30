@@ -1,3 +1,54 @@
+////// Slider //////
+const slider = document.querySelector('.promo-slider');
+
+if (slider) {
+  let slides = slider.querySelectorAll('.promo-slider__slide');
+  let slidesNumber = slides.length - 1;
+  let firstSlide = slides[0];
+  let lastSlide = slides[slidesNumber];
+
+  const arrowLeft = slider.querySelector('.promo-slider__arrow_left');
+  const arrowRight = slider.querySelector('.promo-slider__arrow_right');
+
+  arrowLeft.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i = i + 1) {
+      let currentSlide = slides[i];
+      let previousSlide = slides[i - 1];
+
+      if (currentSlide.classList.contains('promo-slider__slide_current')) {
+        currentSlide.classList.remove('promo-slider__slide_current');
+
+        if (!previousSlide) {
+          lastSlide.classList.add('promo-slider__slide_current');
+          break
+        } else {
+          previousSlide.classList.add('promo-slider__slide_current');
+          break
+        }
+      }
+    }
+  });
+
+  arrowRight.addEventListener('click', function () {
+    for (let i = 0; i < slides.length; i = i + 1) {
+      let currentSlide = slides[i];
+      let nextSlide = slides[i + 1];
+
+      if (currentSlide.classList.contains('promo-slider__slide_current')) {
+        currentSlide.classList.remove('promo-slider__slide_current');
+
+        if (!nextSlide) {
+          firstSlide.classList.add('promo-slider__slide_current');
+          break
+        } else {
+          nextSlide.classList.add('promo-slider__slide_current');
+          break
+        }
+      }
+    }
+  });
+}
+
 ////// Feedback popup //////
 const feedbackLink = document.querySelector('.office-info .button');
 const feedbackPopup = document.querySelector('.modal_feedback');
@@ -87,7 +138,7 @@ if (feedbackPopup) {
       }
     }
   });
-};
+}
 
 ////// Order popup //////
 let buyButtons = document.querySelectorAll('.products-list__buy-button');
@@ -125,4 +176,4 @@ if (buyButtons) {
       }
     }
   });
-};
+}
