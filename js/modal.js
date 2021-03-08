@@ -104,6 +104,36 @@ if (servicesSlider) {
   }
 }
 
+////// Map popup //////
+const mapLink = document.querySelector('.office-info__map');
+const mapPopup = document.querySelector('.modal_map');
+
+if (mapLink) {
+  const mapClose = mapPopup.querySelector('.modal__close')
+
+  mapLink.addEventListener('click', function (evt) {
+    evt.preventDefault();
+
+    mapPopup.classList.add('modal_show');
+  });
+
+  mapClose.addEventListener('click', function (evt) {
+    evt.preventDefault();
+
+    mapPopup.classList.remove('modal_show');
+  });
+
+  window.addEventListener('keydown', function (evt) {
+    if (evt.key === 'Escape') {
+      if (mapPopup.classList.contains('modal_show')) {
+        evt.preventDefault();
+
+        mapPopup.classList.remove('modal_show');
+      }
+    }
+  });
+}
+
 ////// Feedback popup //////
 const feedbackLink = document.querySelector('.office-info .button');
 const feedbackPopup = document.querySelector('.modal_feedback');
