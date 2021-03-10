@@ -54,13 +54,12 @@
                 Равшан Джамшутович
               </span>
             </a>
-            <a class="user-profile__logout" href="#">
+            <a class="user-profile__logout" href="#" aria-label="Выйти из аккаунта">
               <svg class="user-profile__logout-icon" aria-hidden="true" focusable="false" width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 8.5L11.125 0v6h-6v5h6v6L20 8.5z" />
                 <path
                   d="M2.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H3.116C.938 0 .112 1.81.087 3.027v10.946C.112 15.189.938 17 3.116 17h5.027v-1.99H3.116c-.839 0-.992-.683-1.01-1.058z" />
               </svg>
-              <span class="visually-hidden">Выйти</span>
             </a>
           </div>
           <ul class="user-links-list">
@@ -129,10 +128,10 @@
 
               <div class="range-numbers">
                 <label class="visually-hidden" for="from-price">Минимальная цена</label>
-                <input class="range-numbers__input" type="number" id="from-price" value="0">
+                <input class="range-numbers__input" type="number" id="from-price" name="from-price" value="0">
                 <span>—</span>
                 <label class="visually-hidden" for="to-price">Максимальная цена</label>
-                <input class="range-numbers__input" type="number" id="to-price" value="30000">
+                <input class="range-numbers__input" type="number" id="to-price" name="to-price" value="30000">
               </div>
             </fieldset>
 
