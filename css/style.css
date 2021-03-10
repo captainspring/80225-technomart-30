@@ -1432,7 +1432,7 @@ img {
 }
 
 .services-slider-info-list__description {
-  display: relative;
+  position: relative;
   z-index: 2;
   width: 331px;
   margin: 0;
